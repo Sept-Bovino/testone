@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class NetworkPractice {
     public static void main(String[] args) throws Exception{
-        run1();
+//        run1();
     }
 
     //1、使用java程序连接到服务器
