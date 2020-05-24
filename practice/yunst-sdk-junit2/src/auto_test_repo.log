@@ -1,0 +1,1165 @@
+
+[INFO ] 2020-05-19 16:26:06,394 method:com.allinpay.autotest.member.MemberServiceTest.createMember(MemberServiceTest.java:22)
+================MemberAPI: createMember begin================
+[INFO ] 2020-05-19 16:26:11,429 method:com.allinpay.autotest.member.MemberServiceTest.createMember(MemberServiceTest.java:32)
+[bizUserId=2C0A4A5CAC140A025579BB86C2903526, memberType=3, source=2]
+[INFO ] 2020-05-19 16:26:12,138 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:26:12","sign":"Q6SaTCu5sTEhHR6Poofpk46O1R0xAnaocrTKzpKclWg8KOlf83MzCjKqF2jH9n/Jh8z5Tq0IxIdvlQTLgCyrWNJmQ2hpqAM0i15sqmothY7a8igM/Nii3HOHkVOIR0+fQ6s6L5TeZK2fNB6qKMCbE6znVAyszHvwQNi85VmSd68=","req":"{\"method\":\"createMember\",\"param\":{\"bizUserId\":\"2C0A4A5CAC140A025579BB86C2903526\",\"memberType\":3,\"source\":2,\"signedValue\":\"woyebuzhidaoganma\"},\"service\":\"MemberService\"}"}
+[INFO ] 2020-05-19 16:26:12,139 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"createMember","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526","memberType":3,"source":2,"signedValue":"woyebuzhidaoganma"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:26:12,139 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:26:12,140 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:26:12,140 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:26:12
+[INFO ] 2020-05-19 16:26:12,140 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is Q6SaTCu5sTEhHR6Poofpk46O1R0xAnaocrTKzpKclWg8KOlf83MzCjKqF2jH9n/Jh8z5Tq0IxIdvlQTLgCyrWNJmQ2hpqAM0i15sqmothY7a8igM/Nii3HOHkVOIR0+fQ6s6L5TeZK2fNB6qKMCbE6znVAyszHvwQNi85VmSd68=
+[INFO ] 2020-05-19 16:26:12,140 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"createMember","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526","memberType":3,"source":2,"signedValue":"woyebuzhidaoganma"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:26:17,858 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:26:17,878 method:com.allinpay.autotest.member.MemberServiceTest.createMember(MemberServiceTest.java:48)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.member.MemberServiceTest.createMember(MemberServiceTest.java:34)
+	at com.allinpay.autotest.Main.testSuit(Main.java:21)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:26:17,884 method:com.allinpay.autotest.member.MemberServiceTest.createMember(MemberServiceTest.java:53)
+================MemberAPI: createMember end================[elapse: 11483 ms]
+[INFO ] 2020-05-19 16:26:17,885 method:com.allinpay.autotest.member.MemberServiceTest.bindPhone(MemberServiceTest.java:63)
+================MemberAPI: bindPhone begin================
+[INFO ] 2020-05-19 16:26:17,888 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:26:17","sign":"ORKLY68ylknmT6Rsp5k2WXRY1BXB/Tt2xGIswUshBCP1FCeOiVx4KhSlUPauDPb5g6eEBBV4s/fbyGpXHYqMB3yC6qGYhq5/pqMOr+pQSKgVbCsFKPSiji61OXy40DxFw1OFscqczvgHHk06EByBYU5VTeX/Zj1Vd66f7qoqdEQ=","req":"{\"method\":\"bindPhone\",\"param\":{\"bizUserId\":\"2C0A4A5CAC140A025579BB86C2903526\",\"phone\":\"13818589429\",\"verificationCode\":\"11111\"},\"service\":\"MemberService\"}"}
+[INFO ] 2020-05-19 16:26:17,889 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"bindPhone","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526","phone":"13818589429","verificationCode":"11111"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:26:17,889 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:26:17,890 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:26:17,890 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:26:17
+[INFO ] 2020-05-19 16:26:17,890 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is ORKLY68ylknmT6Rsp5k2WXRY1BXB/Tt2xGIswUshBCP1FCeOiVx4KhSlUPauDPb5g6eEBBV4s/fbyGpXHYqMB3yC6qGYhq5/pqMOr+pQSKgVbCsFKPSiji61OXy40DxFw1OFscqczvgHHk06EByBYU5VTeX/Zj1Vd66f7qoqdEQ=
+[INFO ] 2020-05-19 16:26:17,890 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"bindPhone","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526","phone":"13818589429","verificationCode":"11111"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:26:18,089 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:26:18,089 method:com.allinpay.autotest.member.MemberServiceTest.bindPhone(MemberServiceTest.java:87)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.member.MemberServiceTest.bindPhone(MemberServiceTest.java:70)
+	at com.allinpay.autotest.Main.testSuit(Main.java:24)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:26:18,092 method:com.allinpay.autotest.member.MemberServiceTest.bindPhone(MemberServiceTest.java:91)
+================MemberAPI: bindPhone end================[elapse: 205 ms]
+[INFO ] 2020-05-19 16:26:18,093 method:com.allinpay.autotest.member.MemberServiceTest.setRealName(MemberServiceTest.java:101)
+================MemberAPI: setRealName begin================
+[INFO ] 2020-05-19 16:26:18,114 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:26:18","sign":"GoAXfztSV8+VP/vPCowDZvO2DhZXIzAB18UlzX+HMagg0F1khNrCdICMI74dWL0DPHWmc9ly2e2wJwY5u0YXpsFNvvnz6PkViRCbEKDgyGMrf27v45SGp9KU6V7JmlJ3UKd43yU95YmZ+xLBtdJ/I/ncTj/8auAgDfRcbCAXQjM=","req":"{\"method\":\"setRealName\",\"param\":{\"bizUserId\":\"2C0A4A5CAC140A025579BB86C2903526\",\"isAuth\":\"true\",\"name\":\"ä¸\\u0081ä¼\\u009Aäº\\u0091\",\"identityType\":\"1\",\"identityNo\":\"4A67EFCE77E999DBEB918E34F6399D133E788DC1571FDCE190B73D08C63D4FB99CAEA5C32038227F16EE0709CCC74B834CC6A598D5556E862B1954DE0B7656EE6A969803575CF26B69CDDB803A0C011C03D390BABF3199B92CBFA7D24F8218A0EC636C0A7B6C06F451018237C618236890AEBDB7887E314246193682E41D7DCB\"},\"service\":\"MemberService\"}"}
+[INFO ] 2020-05-19 16:26:18,115 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"setRealName","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526","isAuth":"true","name":"ä¸\u0081ä¼\u009Aäº\u0091","identityType":"1","identityNo":"4A67EFCE77E999DBEB918E34F6399D133E788DC1571FDCE190B73D08C63D4FB99CAEA5C32038227F16EE0709CCC74B834CC6A598D5556E862B1954DE0B7656EE6A969803575CF26B69CDDB803A0C011C03D390BABF3199B92CBFA7D24F8218A0EC636C0A7B6C06F451018237C618236890AEBDB7887E314246193682E41D7DCB"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:26:18,115 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:26:18,115 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:26:18,115 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:26:18
+[INFO ] 2020-05-19 16:26:18,115 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is GoAXfztSV8+VP/vPCowDZvO2DhZXIzAB18UlzX+HMagg0F1khNrCdICMI74dWL0DPHWmc9ly2e2wJwY5u0YXpsFNvvnz6PkViRCbEKDgyGMrf27v45SGp9KU6V7JmlJ3UKd43yU95YmZ+xLBtdJ/I/ncTj/8auAgDfRcbCAXQjM=
+[INFO ] 2020-05-19 16:26:18,116 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"setRealName","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526","isAuth":"true","name":"ä¸\u0081ä¼\u009Aäº\u0091","identityType":"1","identityNo":"4A67EFCE77E999DBEB918E34F6399D133E788DC1571FDCE190B73D08C63D4FB99CAEA5C32038227F16EE0709CCC74B834CC6A598D5556E862B1954DE0B7656EE6A969803575CF26B69CDDB803A0C011C03D390BABF3199B92CBFA7D24F8218A0EC636C0A7B6C06F451018237C618236890AEBDB7887E314246193682E41D7DCB"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:26:18,274 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:26:18,275 method:com.allinpay.autotest.member.MemberServiceTest.setRealName(MemberServiceTest.java:127)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.member.MemberServiceTest.setRealName(MemberServiceTest.java:110)
+	at com.allinpay.autotest.Main.testSuit(Main.java:27)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:26:18,276 method:com.allinpay.autotest.member.MemberServiceTest.setRealName(MemberServiceTest.java:131)
+================MemberAPI: setRealName end================[elapse: 182 ms]
+[INFO ] 2020-05-19 16:26:18,277 method:com.allinpay.autotest.member.MemberServiceTest.getMemberInfo(MemberServiceTest.java:136)
+================MemberAPI: getMemberInfo begin================
+[INFO ] 2020-05-19 16:26:18,284 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:26:18","sign":"dKMDJ5QkzQ+2MSP3a3s92eHWoghZc9hm1ptXKBie84itJVQB023XT9BZaExjbl26GU2QrwP9aoPAvgSMv+92qZlFHpLo8M3sqzGupX53ff+wiI4CJqUPm4nHBhE87S1oamghkly5oqYtwsSBI8ijJ5jiLXuSjqlByThMsKaorTE=","req":"{\"method\":\"getMemberInfo\",\"param\":{\"bizUserId\":\"2C0A4A5CAC140A025579BB86C2903526\"},\"service\":\"MemberService\"}"}
+[INFO ] 2020-05-19 16:26:18,285 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"getMemberInfo","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:26:18,285 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:26:18,285 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:26:18,285 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:26:18
+[INFO ] 2020-05-19 16:26:18,286 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is dKMDJ5QkzQ+2MSP3a3s92eHWoghZc9hm1ptXKBie84itJVQB023XT9BZaExjbl26GU2QrwP9aoPAvgSMv+92qZlFHpLo8M3sqzGupX53ff+wiI4CJqUPm4nHBhE87S1oamghkly5oqYtwsSBI8ijJ5jiLXuSjqlByThMsKaorTE=
+[INFO ] 2020-05-19 16:26:18,286 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"getMemberInfo","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:26:18,481 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:26:18,482 method:com.allinpay.autotest.member.MemberServiceTest.getMemberInfo(MemberServiceTest.java:158)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.member.MemberServiceTest.getMemberInfo(MemberServiceTest.java:141)
+	at com.allinpay.autotest.Main.testSuit(Main.java:30)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:26:18,484 method:com.allinpay.autotest.member.MemberServiceTest.getMemberInfo(MemberServiceTest.java:162)
+================MemberAPI: getMemberInfo end================[elapse: 206 ms]
+[INFO ] 2020-05-19 16:26:18,484 method:com.allinpay.autotest.member.MemberServiceTest.applyBindBankCard(MemberServiceTest.java:171)
+================MemberAPI: applyBindBankCard begin================
+[INFO ] 2020-05-19 16:26:18,491 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:26:18","sign":"Y/PcdBrg9pm/zSbEWVhMBvwHS4UGbHGmhgW5roY6M2UbjxAFixmq9ynMIuQpx9wEmsCvKNjlisDWXu030gvofwhVifv27lv9D4BAupSAqnpzvVpFBkSdL+8IAmA/zHfpdvP8UcAYMbrg2S/k5cbJTeHTkmqaIyK4FVOaoK5d1uQ=","req":"{\"method\":\"applyBindBankCard\",\"param\":{\"bizUserId\":\"2C0A4A5CAC140A025579BB86C2903526\",\"phone\":\"13818589429\",\"cardCheck\":2,\"cardNo\":\"3B6ACED9C00B51F48C712A1E78324376AADE154B9085AD6793BFA565CD0AD57E396FF0480082E6F6249EA40ED626F373C169901BA3346FCD2C938FE08BE2967EEC7409704839DFAE75E255F1BC5CBADB649BA2819C2E142FE777403EB6D3970FBD40BBFEDC8B10458169328CBFEF3E1E92D42DE1C911D3E6C78A90B682ED3F83\",\"name\":\"ä¸\\u0081ä¼\\u009Aäº\\u0091\",\"identityNo\":\"25A76C0EC4FAED6906593B5361C150970FE2CAD61FDBCB4BACCA009C79803495BCA40FF55184CA828326B50E6078C442FB5B24B9A3D1DC8C217351D7732EACC936349F1F28B825F10498DEE2C91CF843E1D6C5AAA13B0F0165B8A0F819B7DD974BF37C97AE0B2AAD1E75D2E01FF0E035391D2A201E15A988C3FADED63736109B\",\"identityType\":1,\"validate\":\"2EC898C25CD0DFA38150DCD8B4A5B316DAD9A5A6DF66B9EFCB0368D180FBB14F4DC89A0CF776EF5AB3547D10CF7DC0CCCB7B794E4913643E01B73073F93E5231385065D9E4B175ED2DF8F8509607424036E938F965E3C2F21B10FEDCD1DB2EC4F866ED05F6B3471B6821DAEDF889C6A63268CD41482C6E9F2BA4707CEA35A087\",\"cvv2\":\"1234\",\"isSafeCard\":true,\"unionBank\":\"\"},\"service\":\"MemberService\"}"}
+[INFO ] 2020-05-19 16:26:18,491 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"applyBindBankCard","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526","phone":"13818589429","cardCheck":2,"cardNo":"3B6ACED9C00B51F48C712A1E78324376AADE154B9085AD6793BFA565CD0AD57E396FF0480082E6F6249EA40ED626F373C169901BA3346FCD2C938FE08BE2967EEC7409704839DFAE75E255F1BC5CBADB649BA2819C2E142FE777403EB6D3970FBD40BBFEDC8B10458169328CBFEF3E1E92D42DE1C911D3E6C78A90B682ED3F83","name":"ä¸\u0081ä¼\u009Aäº\u0091","identityNo":"25A76C0EC4FAED6906593B5361C150970FE2CAD61FDBCB4BACCA009C79803495BCA40FF55184CA828326B50E6078C442FB5B24B9A3D1DC8C217351D7732EACC936349F1F28B825F10498DEE2C91CF843E1D6C5AAA13B0F0165B8A0F819B7DD974BF37C97AE0B2AAD1E75D2E01FF0E035391D2A201E15A988C3FADED63736109B","identityType":1,"validate":"2EC898C25CD0DFA38150DCD8B4A5B316DAD9A5A6DF66B9EFCB0368D180FBB14F4DC89A0CF776EF5AB3547D10CF7DC0CCCB7B794E4913643E01B73073F93E5231385065D9E4B175ED2DF8F8509607424036E938F965E3C2F21B10FEDCD1DB2EC4F866ED05F6B3471B6821DAEDF889C6A63268CD41482C6E9F2BA4707CEA35A087","cvv2":"1234","isSafeCard":true,"unionBank":""},"service":"MemberService"}
+[INFO ] 2020-05-19 16:26:18,492 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:26:18,492 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:26:18,492 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:26:18
+[INFO ] 2020-05-19 16:26:18,492 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is Y/PcdBrg9pm/zSbEWVhMBvwHS4UGbHGmhgW5roY6M2UbjxAFixmq9ynMIuQpx9wEmsCvKNjlisDWXu030gvofwhVifv27lv9D4BAupSAqnpzvVpFBkSdL+8IAmA/zHfpdvP8UcAYMbrg2S/k5cbJTeHTkmqaIyK4FVOaoK5d1uQ=
+[INFO ] 2020-05-19 16:26:18,492 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"applyBindBankCard","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526","phone":"13818589429","cardCheck":2,"cardNo":"3B6ACED9C00B51F48C712A1E78324376AADE154B9085AD6793BFA565CD0AD57E396FF0480082E6F6249EA40ED626F373C169901BA3346FCD2C938FE08BE2967EEC7409704839DFAE75E255F1BC5CBADB649BA2819C2E142FE777403EB6D3970FBD40BBFEDC8B10458169328CBFEF3E1E92D42DE1C911D3E6C78A90B682ED3F83","name":"ä¸\u0081ä¼\u009Aäº\u0091","identityNo":"25A76C0EC4FAED6906593B5361C150970FE2CAD61FDBCB4BACCA009C79803495BCA40FF55184CA828326B50E6078C442FB5B24B9A3D1DC8C217351D7732EACC936349F1F28B825F10498DEE2C91CF843E1D6C5AAA13B0F0165B8A0F819B7DD974BF37C97AE0B2AAD1E75D2E01FF0E035391D2A201E15A988C3FADED63736109B","identityType":1,"validate":"2EC898C25CD0DFA38150DCD8B4A5B316DAD9A5A6DF66B9EFCB0368D180FBB14F4DC89A0CF776EF5AB3547D10CF7DC0CCCB7B794E4913643E01B73073F93E5231385065D9E4B175ED2DF8F8509607424036E938F965E3C2F21B10FEDCD1DB2EC4F866ED05F6B3471B6821DAEDF889C6A63268CD41482C6E9F2BA4707CEA35A087","cvv2":"1234","isSafeCard":true,"unionBank":""},"service":"MemberService"}
+[INFO ] 2020-05-19 16:26:18,716 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:26:18,717 method:com.allinpay.autotest.member.MemberServiceTest.applyBindBankCard(MemberServiceTest.java:232)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.member.MemberServiceTest.applyBindBankCard(MemberServiceTest.java:200)
+	at com.allinpay.autotest.Main.testSuit(Main.java:43)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:26:18,718 method:com.allinpay.autotest.member.MemberServiceTest.applyBindBankCard(MemberServiceTest.java:237)
+================MemberAPI: applyBindBankCard end================[elapse: 234 ms]
+[INFO ] 2020-05-19 16:26:18,719 method:com.allinpay.autotest.member.MemberServiceTest.setSafeCard(MemberServiceTest.java:285)
+================MemberAPI: setSafeCard begin================
+[INFO ] 2020-05-19 16:26:18,726 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:26:18","sign":"JjsmtGdLs5NEBJpqpqHxwDayPqZ2hYTeaja8Bnhzj2zLI2SZourT2U0AUIV4OPNbkyjdCysRcGw1aaNtnX4CLMn68H7Day6wppfuIKoG6O8eib6AUlqZDcr5T81kWoJkRGZ7XpoAFHxiThuo4HF7SOQUM47mxIiO7viMv/KNvAo=","req":"{\"method\":\"setSafeCard\",\"param\":{\"bizUserId\":\"2C0A4A5CAC140A025579BB86C2903526\",\"cardNo\":\"5DBD22C434822946A557B5BC7CE5CCBB72FAFE7E2663D6FFEB9EA2958BEE2716A25F6FB65DEBC0029F927662E2A93BD5CCBE5428CFA12D33647C1B64CA57F999E9F65BD9D9DBB7F352535CECABC4DB663325762EF3827AB5836D13F46FD6329326BC9F3EC74BDAD686100705946FD8082E6C873057C780191889D535999958B3\",\"setSafeCard\":true},\"service\":\"MemberService\"}"}
+[INFO ] 2020-05-19 16:26:18,727 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"setSafeCard","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526","cardNo":"5DBD22C434822946A557B5BC7CE5CCBB72FAFE7E2663D6FFEB9EA2958BEE2716A25F6FB65DEBC0029F927662E2A93BD5CCBE5428CFA12D33647C1B64CA57F999E9F65BD9D9DBB7F352535CECABC4DB663325762EF3827AB5836D13F46FD6329326BC9F3EC74BDAD686100705946FD8082E6C873057C780191889D535999958B3","setSafeCard":true},"service":"MemberService"}
+[INFO ] 2020-05-19 16:26:18,733 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:26:18,733 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:26:18,733 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:26:18
+[INFO ] 2020-05-19 16:26:18,734 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is JjsmtGdLs5NEBJpqpqHxwDayPqZ2hYTeaja8Bnhzj2zLI2SZourT2U0AUIV4OPNbkyjdCysRcGw1aaNtnX4CLMn68H7Day6wppfuIKoG6O8eib6AUlqZDcr5T81kWoJkRGZ7XpoAFHxiThuo4HF7SOQUM47mxIiO7viMv/KNvAo=
+[INFO ] 2020-05-19 16:26:18,734 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"setSafeCard","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526","cardNo":"5DBD22C434822946A557B5BC7CE5CCBB72FAFE7E2663D6FFEB9EA2958BEE2716A25F6FB65DEBC0029F927662E2A93BD5CCBE5428CFA12D33647C1B64CA57F999E9F65BD9D9DBB7F352535CECABC4DB663325762EF3827AB5836D13F46FD6329326BC9F3EC74BDAD686100705946FD8082E6C873057C780191889D535999958B3","setSafeCard":true},"service":"MemberService"}
+[INFO ] 2020-05-19 16:26:18,964 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:26:18,965 method:com.allinpay.autotest.member.MemberServiceTest.setSafeCard(MemberServiceTest.java:311)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.member.MemberServiceTest.setSafeCard(MemberServiceTest.java:293)
+	at com.allinpay.autotest.Main.testSuit(Main.java:54)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:26:18,966 method:com.allinpay.autotest.member.MemberServiceTest.setSafeCard(MemberServiceTest.java:316)
+================MemberAPI: setSafeCard end================[elapse: 245 ms]
+[INFO ] 2020-05-19 16:26:18,966 method:com.allinpay.autotest.member.MemberServiceTest.queryBankCard(MemberServiceTest.java:322)
+================MemberAPI: queryBankCard begin================
+[INFO ] 2020-05-19 16:26:18,972 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:26:18","sign":"RgQpZYOOI3YvQ8Q5cQ5Nckih/svAkedyY6tXIKjEqNt0qB5sD/ko4fNZo32EmcZo5yV0nsXaM5pz8FeqBfhJP0J0G+9X4yvePJi9viFZfuV3xZ9zijhnW54Yu72y2OUq/1llByBi8LnsT8IMZKTtNwUjZsqQzNKO62PeL6GV3CA=","req":"{\"method\":\"queryBankCard\",\"param\":{\"bizUserId\":\"2C0A4A5CAC140A025579BB86C2903526\",\"cardNo\":\"691601932118BB85A99489031D7E66532F6200CEF52F942BEB7590EBC2B660F544257850A85075AA95E90C8E7CAA3D538008805D666B909DFCB75B81C2D96B856A0AC6C29853351E373A3FBF238CBD5DA1311A9E33DF7312B13775D5C5B2958FCA9AEEE0AE4C5670C0CAB35CDE9F4F7069B6E388DEF0E972C89952185532A1DD\"},\"service\":\"MemberService\"}"}
+[INFO ] 2020-05-19 16:26:18,974 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"queryBankCard","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526","cardNo":"691601932118BB85A99489031D7E66532F6200CEF52F942BEB7590EBC2B660F544257850A85075AA95E90C8E7CAA3D538008805D666B909DFCB75B81C2D96B856A0AC6C29853351E373A3FBF238CBD5DA1311A9E33DF7312B13775D5C5B2958FCA9AEEE0AE4C5670C0CAB35CDE9F4F7069B6E388DEF0E972C89952185532A1DD"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:26:18,974 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:26:18,975 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:26:18,975 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:26:18
+[INFO ] 2020-05-19 16:26:18,975 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is RgQpZYOOI3YvQ8Q5cQ5Nckih/svAkedyY6tXIKjEqNt0qB5sD/ko4fNZo32EmcZo5yV0nsXaM5pz8FeqBfhJP0J0G+9X4yvePJi9viFZfuV3xZ9zijhnW54Yu72y2OUq/1llByBi8LnsT8IMZKTtNwUjZsqQzNKO62PeL6GV3CA=
+[INFO ] 2020-05-19 16:26:18,975 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"queryBankCard","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526","cardNo":"691601932118BB85A99489031D7E66532F6200CEF52F942BEB7590EBC2B660F544257850A85075AA95E90C8E7CAA3D538008805D666B909DFCB75B81C2D96B856A0AC6C29853351E373A3FBF238CBD5DA1311A9E33DF7312B13775D5C5B2958FCA9AEEE0AE4C5670C0CAB35CDE9F4F7069B6E388DEF0E972C89952185532A1DD"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:26:19,171 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:26:19,172 method:com.allinpay.autotest.member.MemberServiceTest.queryBankCard(MemberServiceTest.java:348)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.member.MemberServiceTest.queryBankCard(MemberServiceTest.java:330)
+	at com.allinpay.autotest.Main.testSuit(Main.java:57)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:26:19,173 method:com.allinpay.autotest.member.MemberServiceTest.queryBankCard(MemberServiceTest.java:353)
+================MemberAPI: queryBankCard end================[elapse: 206 ms]
+[INFO ] 2020-05-19 16:26:19,173 method:com.allinpay.autotest.member.MemberServiceTest.queryBankCard(MemberServiceTest.java:322)
+================MemberAPI: queryBankCard begin================
+[INFO ] 2020-05-19 16:26:19,177 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:26:19","sign":"FsiJ0sBQ7+WT4+N1gnYOBMSmQXwgbjAHU2psk8pK3ItNGPtH939bzjXmKIBo6qeZEgVKzxWFnGJcmzxJ9cKtNP0odz+HWB6NJwFHhC+AbiVxUIfYOBovMncE7q1RIsrnEI8g/8mtnxVGgkJyIG4gWXfLLnvotcrESMjem9FDPyo=","req":"{\"method\":\"queryBankCard\",\"param\":{\"bizUserId\":\"2C0A4A5CAC140A025579BB86C2903526\",\"cardNo\":\"7FCD18E5D8A74998A2963CDD8981EA49CCC7D7B38E365B10F85F6A5B544C5B06E579E120EB3A374AA30596FFC3777F7BD450ABC587C6DD955782B339F28C65BF8E9D75E98342B95549D6CDF90ACA25DA6909397F521874F06C5B84EC412CB20A7582A71C12FC6744F4DF8455AE84C1D06B052E0BAFD9945108F9BAF61047D8BA\"},\"service\":\"MemberService\"}"}
+[INFO ] 2020-05-19 16:26:19,177 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"queryBankCard","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526","cardNo":"7FCD18E5D8A74998A2963CDD8981EA49CCC7D7B38E365B10F85F6A5B544C5B06E579E120EB3A374AA30596FFC3777F7BD450ABC587C6DD955782B339F28C65BF8E9D75E98342B95549D6CDF90ACA25DA6909397F521874F06C5B84EC412CB20A7582A71C12FC6744F4DF8455AE84C1D06B052E0BAFD9945108F9BAF61047D8BA"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:26:19,177 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:26:19,178 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:26:19,178 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:26:19
+[INFO ] 2020-05-19 16:26:19,178 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is FsiJ0sBQ7+WT4+N1gnYOBMSmQXwgbjAHU2psk8pK3ItNGPtH939bzjXmKIBo6qeZEgVKzxWFnGJcmzxJ9cKtNP0odz+HWB6NJwFHhC+AbiVxUIfYOBovMncE7q1RIsrnEI8g/8mtnxVGgkJyIG4gWXfLLnvotcrESMjem9FDPyo=
+[INFO ] 2020-05-19 16:26:19,178 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"queryBankCard","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526","cardNo":"7FCD18E5D8A74998A2963CDD8981EA49CCC7D7B38E365B10F85F6A5B544C5B06E579E120EB3A374AA30596FFC3777F7BD450ABC587C6DD955782B339F28C65BF8E9D75E98342B95549D6CDF90ACA25DA6909397F521874F06C5B84EC412CB20A7582A71C12FC6744F4DF8455AE84C1D06B052E0BAFD9945108F9BAF61047D8BA"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:26:19,404 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:26:19,405 method:com.allinpay.autotest.member.MemberServiceTest.queryBankCard(MemberServiceTest.java:348)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.member.MemberServiceTest.queryBankCard(MemberServiceTest.java:330)
+	at com.allinpay.autotest.Main.testSuit(Main.java:58)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:26:19,405 method:com.allinpay.autotest.member.MemberServiceTest.queryBankCard(MemberServiceTest.java:353)
+================MemberAPI: queryBankCard end================[elapse: 232 ms]
+[INFO ] 2020-05-19 16:26:19,405 method:com.allinpay.autotest.member.MemberServiceTest.unbindBankCard(MemberServiceTest.java:360)
+================MemberAPI: unbindBankCard begin================
+[INFO ] 2020-05-19 16:26:19,407 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:26:19","sign":"a4nJmV7K9s70VaPTBB6BYwm4Zym8Bqi5irxVdmOyTUxRI55B6Q3/ducoB551x4Oyk9tV1SuaHkbYZjfaQKNq8O5nB9GkMLT79Z3XgfsJYovxtRjU1itNt4mBf+fkUKeZCU7aI6sZBPX218qh/aJo2iqvXy1r2AWJqYwZPwUhKjM=","req":"{\"method\":\"unbindBankCard\",\"param\":{\"bizUserId\":\"2C0A4A5CAC140A025579BB86C2903526\",\"cardNo\":\"77E5D6F99E497E741E16FA5604201700FA766976E2DC4F90BD4CEF2C3783B816B85F9501426B9C7B97EF0256223BE926BE0930BA89877786AC783B7D79FDCDFB71244A6F699FF8F7BAF4B1164C03760AEF265FC68A270D95E8418F0021D1C994CDFC3ED617C6B18D3D955466CB5BB413D032F9A13C66928C7A07E02C9D0D7C3A\"},\"service\":\"MemberService\"}"}
+[INFO ] 2020-05-19 16:26:19,409 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"unbindBankCard","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526","cardNo":"77E5D6F99E497E741E16FA5604201700FA766976E2DC4F90BD4CEF2C3783B816B85F9501426B9C7B97EF0256223BE926BE0930BA89877786AC783B7D79FDCDFB71244A6F699FF8F7BAF4B1164C03760AEF265FC68A270D95E8418F0021D1C994CDFC3ED617C6B18D3D955466CB5BB413D032F9A13C66928C7A07E02C9D0D7C3A"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:26:19,409 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:26:19,409 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:26:19,409 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:26:19
+[INFO ] 2020-05-19 16:26:19,409 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is a4nJmV7K9s70VaPTBB6BYwm4Zym8Bqi5irxVdmOyTUxRI55B6Q3/ducoB551x4Oyk9tV1SuaHkbYZjfaQKNq8O5nB9GkMLT79Z3XgfsJYovxtRjU1itNt4mBf+fkUKeZCU7aI6sZBPX218qh/aJo2iqvXy1r2AWJqYwZPwUhKjM=
+[INFO ] 2020-05-19 16:26:19,409 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"unbindBankCard","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526","cardNo":"77E5D6F99E497E741E16FA5604201700FA766976E2DC4F90BD4CEF2C3783B816B85F9501426B9C7B97EF0256223BE926BE0930BA89877786AC783B7D79FDCDFB71244A6F699FF8F7BAF4B1164C03760AEF265FC68A270D95E8418F0021D1C994CDFC3ED617C6B18D3D955466CB5BB413D032F9A13C66928C7A07E02C9D0D7C3A"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:26:19,568 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:26:19,569 method:com.allinpay.autotest.member.MemberServiceTest.unbindBankCard(MemberServiceTest.java:386)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.member.MemberServiceTest.unbindBankCard(MemberServiceTest.java:368)
+	at com.allinpay.autotest.Main.testSuit(Main.java:61)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:26:19,570 method:com.allinpay.autotest.member.MemberServiceTest.unbindBankCard(MemberServiceTest.java:391)
+================MemberAPI: unbindBankCard end================[elapse: 165 ms]
+[INFO ] 2020-05-19 16:26:19,571 method:com.allinpay.autotest.member.MemberServiceTest.lockMember(MemberServiceTest.java:398)
+================MemberAPI: lockMember begin================
+[INFO ] 2020-05-19 16:26:19,574 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:26:19","sign":"gfS7GY0MjHXXus1480GUbl69wI6ajLLDwPAd+qIy3UMWKsvGETg4KaWLF7SsnJTybSkh6klhh/u34DaB8keUqt/mc3l67xplYtstBAFLpxnE1qHCdPKY0YcWu49kfvaoqLokUFOtBPUtcKQHrtEUAhAUXz7F8dSdOLN0Iq8ozEA=","req":"{\"method\":\"lockMember\",\"param\":{\"bizUserId\":\"2C0A4A5CAC140A025579BB86C2903526\"},\"service\":\"MemberService\"}"}
+[INFO ] 2020-05-19 16:26:19,574 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"lockMember","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:26:19,574 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:26:19,575 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:26:19,575 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:26:19
+[INFO ] 2020-05-19 16:26:19,575 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is gfS7GY0MjHXXus1480GUbl69wI6ajLLDwPAd+qIy3UMWKsvGETg4KaWLF7SsnJTybSkh6klhh/u34DaB8keUqt/mc3l67xplYtstBAFLpxnE1qHCdPKY0YcWu49kfvaoqLokUFOtBPUtcKQHrtEUAhAUXz7F8dSdOLN0Iq8ozEA=
+[INFO ] 2020-05-19 16:26:19,575 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"lockMember","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:26:19,753 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:26:19,754 method:com.allinpay.autotest.member.MemberServiceTest.lockMember(MemberServiceTest.java:423)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.member.MemberServiceTest.lockMember(MemberServiceTest.java:405)
+	at com.allinpay.autotest.Main.testSuit(Main.java:64)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:26:19,755 method:com.allinpay.autotest.member.MemberServiceTest.lockMember(MemberServiceTest.java:428)
+================MemberAPI: lockMember end================[elapse: 184 ms]
+[INFO ] 2020-05-19 16:26:19,755 method:com.allinpay.autotest.member.MemberServiceTest.unlockMember(MemberServiceTest.java:434)
+================MemberAPI: unlockMember begin================
+[INFO ] 2020-05-19 16:26:19,759 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:26:19","sign":"gwuQzYfgO8QzkR3doaGj3wFkFvLCWwxErU+/+nvlVUaTbcj1hFe4deKoJ0PQ98dCVCucU/htDOrM0WB6A3n7AKzzQwKuMLI0Sumfa2f4Yduhf2cvQT4SOBaIqrkhWrWxq9zU9ilfMhUtwrOwPfQEFTCrzykI7PEnhxqEI0/fMww=","req":"{\"method\":\"unlockMember\",\"param\":{\"bizUserId\":\"2C0A4A5CAC140A025579BB86C2903526\"},\"service\":\"MemberService\"}"}
+[INFO ] 2020-05-19 16:26:19,759 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"unlockMember","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:26:19,759 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:26:19,759 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:26:19,759 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:26:19
+[INFO ] 2020-05-19 16:26:19,760 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is gwuQzYfgO8QzkR3doaGj3wFkFvLCWwxErU+/+nvlVUaTbcj1hFe4deKoJ0PQ98dCVCucU/htDOrM0WB6A3n7AKzzQwKuMLI0Sumfa2f4Yduhf2cvQT4SOBaIqrkhWrWxq9zU9ilfMhUtwrOwPfQEFTCrzykI7PEnhxqEI0/fMww=
+[INFO ] 2020-05-19 16:26:19,760 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"unlockMember","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:26:19,963 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:26:19,964 method:com.allinpay.autotest.member.MemberServiceTest.unlockMember(MemberServiceTest.java:459)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.member.MemberServiceTest.unlockMember(MemberServiceTest.java:441)
+	at com.allinpay.autotest.Main.testSuit(Main.java:67)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:26:19,965 method:com.allinpay.autotest.member.MemberServiceTest.unlockMember(MemberServiceTest.java:464)
+================MemberAPI: unlockMember end================[elapse: 208 ms]
+[INFO ] 2020-05-19 16:26:19,965 method:com.allinpay.autotest.member.MemberServiceTest.vspTermidService(MemberServiceTest.java:469)
+================MemberAPI: vspTermidService begin================
+[INFO ] 2020-05-19 16:26:19,970 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:26:19","sign":"N8IJuZFo2KfzWxrTqNyPbaM7wtoTj/co5h8RaQqNZNdMezrfPWnA0JPglcYfaZIycSoaFJ4C9yNx0qG76mjq5pamFof3dxzmhshareD1fvg10s9FMy3wo9rv4TBKvBUpHMWBin3OHGsDlmVXTsdIUIXNdzTK1eV4w8hNV0RXmb4=","req":"{\"method\":\"vspTermidService\",\"param\":{\"bizUserId\":\"2C0A4A5CAC140A025579BB86C2903526\",\"operationType\":\"set\",\"vspMerchantid\":\"set\",\"appid\":\"set\",\"vspTermid\":\"set\"},\"service\":\"MemberService\"}"}
+[INFO ] 2020-05-19 16:26:19,970 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"vspTermidService","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526","operationType":"set","vspMerchantid":"set","appid":"set","vspTermid":"set"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:26:19,970 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:26:19,971 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:26:19,971 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:26:19
+[INFO ] 2020-05-19 16:26:19,971 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is N8IJuZFo2KfzWxrTqNyPbaM7wtoTj/co5h8RaQqNZNdMezrfPWnA0JPglcYfaZIycSoaFJ4C9yNx0qG76mjq5pamFof3dxzmhshareD1fvg10s9FMy3wo9rv4TBKvBUpHMWBin3OHGsDlmVXTsdIUIXNdzTK1eV4w8hNV0RXmb4=
+[INFO ] 2020-05-19 16:26:19,972 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"vspTermidService","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526","operationType":"set","vspMerchantid":"set","appid":"set","vspTermid":"set"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:26:20,149 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:26:20,150 method:com.allinpay.autotest.member.MemberServiceTest.vspTermidService(MemberServiceTest.java:497)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.member.MemberServiceTest.vspTermidService(MemberServiceTest.java:479)
+	at com.allinpay.autotest.Main.testSuit(Main.java:74)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:26:20,151 method:com.allinpay.autotest.member.MemberServiceTest.vspTermidService(MemberServiceTest.java:502)
+================MemberAPI: vspTermidService end================[elapse: 184 ms]
+[INFO ] 2020-05-19 16:26:20,151 method:com.allinpay.autotest.member.MemberServiceTest.vspTermidService(MemberServiceTest.java:469)
+================MemberAPI: vspTermidService begin================
+[INFO ] 2020-05-19 16:26:20,154 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:26:20","sign":"gXDeLf+rSLNYJ12mEpqevn88Y45qoweRWYvnLY9RswHb2QlDANxg7HNckJiV2zfnj0NiMolUGB8BApuYar0PTAuJXmQAsaE6wYctucSCa7rbwFpRmaRLKwkSUdNvaBfpLocJJVS2jFnORanGEbIpz9d0ofXoGV1JcGXxnW1EY9Q=","req":"{\"method\":\"vspTermidService\",\"param\":{\"bizUserId\":\"2C0A4A5CAC140A025579BB86C2903526\",\"operationType\":\"query\",\"vspMerchantid\":\"set\",\"appid\":\"set\",\"vspTermid\":\"set\"},\"service\":\"MemberService\"}"}
+[INFO ] 2020-05-19 16:26:20,154 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"vspTermidService","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526","operationType":"query","vspMerchantid":"set","appid":"set","vspTermid":"set"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:26:20,154 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:26:20,155 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:26:20,155 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:26:20
+[INFO ] 2020-05-19 16:26:20,155 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is gXDeLf+rSLNYJ12mEpqevn88Y45qoweRWYvnLY9RswHb2QlDANxg7HNckJiV2zfnj0NiMolUGB8BApuYar0PTAuJXmQAsaE6wYctucSCa7rbwFpRmaRLKwkSUdNvaBfpLocJJVS2jFnORanGEbIpz9d0ofXoGV1JcGXxnW1EY9Q=
+[INFO ] 2020-05-19 16:26:20,155 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"vspTermidService","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526","operationType":"query","vspMerchantid":"set","appid":"set","vspTermid":"set"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:26:20,479 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:26:20,480 method:com.allinpay.autotest.member.MemberServiceTest.vspTermidService(MemberServiceTest.java:497)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.member.MemberServiceTest.vspTermidService(MemberServiceTest.java:479)
+	at com.allinpay.autotest.Main.testSuit(Main.java:75)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:26:20,480 method:com.allinpay.autotest.member.MemberServiceTest.vspTermidService(MemberServiceTest.java:502)
+================MemberAPI: vspTermidService end================[elapse: 329 ms]
+[INFO ] 2020-05-19 16:26:20,489 method:com.allinpay.autotest.order.OrderServiceTest.depositApply(OrderServiceTest.java:42)
+================OrderAPI: depositApply begin================
+[INFO ] 2020-05-19 16:26:20,497 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:26:20","sign":"cMSlrR4i0INdRIBF5kq/jssX/XFVYh00tDd+sJtE5etx4e3Im8l1D2spXtPsgZNf1cj0PawV7XxoEMyAhRocUTPGloRC6GnBg9tb8hYaqvqPZw+IJCJQ+IUNamU2vrLsvEexpGTR4h4pKMZ0AsMhKn8alrnnU9Bk8xEdSD4FNZo=","req":"{\"method\":\"depositApply\",\"param\":{\"bizUserId\":\"2C0A4A5CAC140A025579BB86C2903526\",\"bizOrderNo\":\"CZ1589876780490\",\"accountSetNo\":\"\",\"amount\":2,\"fee\":0,\"validateType\":1,\"frontUrl\":\"\",\"backUrl\":\"\",\"ordErexpireDatetime\":\"2020-05-20 07:26:20\",\"payMethod\":{\"GATEWAY\":{\"bankCode\":\"vbank\",\"amount\":2,\"payType\":1,\"bankCardNo\":\"883D5E34DBBD740280F139DCB30ED0D036EDC1369FA990B9A2AECFEC0DF8B388EB220A9AEAA4020B4562F54DD6F017DC031B6289795C4485DE8F14ACA81085D6572DA65934B6C79758157D0B316AFBA1A9C26850DED5C881CF4A8B527D40EC91B44911B74F103718865E821BEEA51F964C87D0341DF1EAA67D13532408D73CC1\"}},\"goodsName\":\"computer\",\"industryCode\":\"2413\",\"industryName\":\"电子产品\",\"source\":2,\"summary\":\"AUTO-TEST depositApply\",\"extendInfo\":\"AUTO-TEST this is extendInfo\"},\"service\":\"OrderService\"}"}
+[INFO ] 2020-05-19 16:26:20,498 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"depositApply","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526","bizOrderNo":"CZ1589876780490","accountSetNo":"","amount":2,"fee":0,"validateType":1,"frontUrl":"","backUrl":"","ordErexpireDatetime":"2020-05-20 07:26:20","payMethod":{"GATEWAY":{"bankCode":"vbank","amount":2,"payType":1,"bankCardNo":"883D5E34DBBD740280F139DCB30ED0D036EDC1369FA990B9A2AECFEC0DF8B388EB220A9AEAA4020B4562F54DD6F017DC031B6289795C4485DE8F14ACA81085D6572DA65934B6C79758157D0B316AFBA1A9C26850DED5C881CF4A8B527D40EC91B44911B74F103718865E821BEEA51F964C87D0341DF1EAA67D13532408D73CC1"}},"goodsName":"computer","industryCode":"2413","industryName":"电子产品","source":2,"summary":"AUTO-TEST depositApply","extendInfo":"AUTO-TEST this is extendInfo"},"service":"OrderService"}
+[INFO ] 2020-05-19 16:26:20,498 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:26:20,498 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:26:20,498 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:26:20
+[INFO ] 2020-05-19 16:26:20,498 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is cMSlrR4i0INdRIBF5kq/jssX/XFVYh00tDd+sJtE5etx4e3Im8l1D2spXtPsgZNf1cj0PawV7XxoEMyAhRocUTPGloRC6GnBg9tb8hYaqvqPZw+IJCJQ+IUNamU2vrLsvEexpGTR4h4pKMZ0AsMhKn8alrnnU9Bk8xEdSD4FNZo=
+[INFO ] 2020-05-19 16:26:20,499 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"depositApply","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526","bizOrderNo":"CZ1589876780490","accountSetNo":"","amount":2,"fee":0,"validateType":1,"frontUrl":"","backUrl":"","ordErexpireDatetime":"2020-05-20 07:26:20","payMethod":{"GATEWAY":{"bankCode":"vbank","amount":2,"payType":1,"bankCardNo":"883D5E34DBBD740280F139DCB30ED0D036EDC1369FA990B9A2AECFEC0DF8B388EB220A9AEAA4020B4562F54DD6F017DC031B6289795C4485DE8F14ACA81085D6572DA65934B6C79758157D0B316AFBA1A9C26850DED5C881CF4A8B527D40EC91B44911B74F103718865E821BEEA51F964C87D0341DF1EAA67D13532408D73CC1"}},"goodsName":"computer","industryCode":"2413","industryName":"电子产品","source":2,"summary":"AUTO-TEST depositApply","extendInfo":"AUTO-TEST this is extendInfo"},"service":"OrderService"}
+[INFO ] 2020-05-19 16:26:20,719 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:26:20,720 method:com.allinpay.autotest.order.OrderServiceTest.depositApply(OrderServiceTest.java:354)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.order.OrderServiceTest.depositApply(OrderServiceTest.java:338)
+	at com.allinpay.autotest.Main.testSuit(Main.java:96)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:26:20,723 method:com.allinpay.autotest.order.OrderServiceTest.depositApply(OrderServiceTest.java:363)
+================OrderAPI: depositApply end================[elapse: 232 ms]
+[INFO ] 2020-05-19 16:26:20,723 method:com.allinpay.autotest.order.OrderServiceTest.depositApply(OrderServiceTest.java:42)
+================OrderAPI: depositApply begin================
+[INFO ] 2020-05-19 16:26:20,726 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:26:20","sign":"hLKdPsPmTpgA9qGiDMx5RXdiAbuM3HHtn1/fJrb4yUdprTUNZDtOzym9+pDoemWbYqONKKX3POTo6VDvF7OI49WhYfKeEifMdsTwVj3A1SobWcY3SdQ62/FMnLo6fuI+1kJYFOk4EiuzkE0kh10mgTcyRH3yxZhF3yxjzbOvB1w=","req":"{\"method\":\"depositApply\",\"param\":{\"bizUserId\":\"2C0A4A5CAC140A025579BB86C2903526\",\"bizOrderNo\":\"CZ1589876780723\",\"accountSetNo\":\"\",\"amount\":2,\"fee\":0,\"validateType\":1,\"frontUrl\":\"\",\"backUrl\":\"\",\"ordErexpireDatetime\":\"2020-05-20 07:26:20\",\"payMethod\":{\"WECHATPAY_APP\":{\"amount\":2,\"subMchId\":\"\",\"Acct\":\"\",\"limitPay\":\"\",\"subAppId\":\"\"}},\"goodsName\":\"computer\",\"industryCode\":\"2413\",\"industryName\":\"电子产品\",\"source\":2,\"summary\":\"AUTO-TEST depositApply\",\"extendInfo\":\"AUTO-TEST this is extendInfo\"},\"service\":\"OrderService\"}"}
+[INFO ] 2020-05-19 16:26:20,726 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"depositApply","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526","bizOrderNo":"CZ1589876780723","accountSetNo":"","amount":2,"fee":0,"validateType":1,"frontUrl":"","backUrl":"","ordErexpireDatetime":"2020-05-20 07:26:20","payMethod":{"WECHATPAY_APP":{"amount":2,"subMchId":"","Acct":"","limitPay":"","subAppId":""}},"goodsName":"computer","industryCode":"2413","industryName":"电子产品","source":2,"summary":"AUTO-TEST depositApply","extendInfo":"AUTO-TEST this is extendInfo"},"service":"OrderService"}
+[INFO ] 2020-05-19 16:26:20,726 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:26:20,727 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:26:20,727 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:26:20
+[INFO ] 2020-05-19 16:26:20,727 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is hLKdPsPmTpgA9qGiDMx5RXdiAbuM3HHtn1/fJrb4yUdprTUNZDtOzym9+pDoemWbYqONKKX3POTo6VDvF7OI49WhYfKeEifMdsTwVj3A1SobWcY3SdQ62/FMnLo6fuI+1kJYFOk4EiuzkE0kh10mgTcyRH3yxZhF3yxjzbOvB1w=
+[INFO ] 2020-05-19 16:26:20,727 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"depositApply","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526","bizOrderNo":"CZ1589876780723","accountSetNo":"","amount":2,"fee":0,"validateType":1,"frontUrl":"","backUrl":"","ordErexpireDatetime":"2020-05-20 07:26:20","payMethod":{"WECHATPAY_APP":{"amount":2,"subMchId":"","Acct":"","limitPay":"","subAppId":""}},"goodsName":"computer","industryCode":"2413","industryName":"电子产品","source":2,"summary":"AUTO-TEST depositApply","extendInfo":"AUTO-TEST this is extendInfo"},"service":"OrderService"}
+[INFO ] 2020-05-19 16:26:20,912 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:26:20,912 method:com.allinpay.autotest.order.OrderServiceTest.depositApply(OrderServiceTest.java:354)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.order.OrderServiceTest.depositApply(OrderServiceTest.java:338)
+	at com.allinpay.autotest.Main.testSuit(Main.java:98)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:26:20,912 method:com.allinpay.autotest.order.OrderServiceTest.depositApply(OrderServiceTest.java:363)
+================OrderAPI: depositApply end================[elapse: 189 ms]
+[INFO ] 2020-05-19 16:26:20,912 method:com.allinpay.autotest.order.OrderServiceTest.depositApply(OrderServiceTest.java:42)
+================OrderAPI: depositApply begin================
+[INFO ] 2020-05-19 16:26:20,915 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:26:20","sign":"bTW6ZcImuzzq8xBOb9F+CojZURqd/XrnoCDEee+WtHnCDR97pTiQJzBtpq8lgC+5id6BHfsYGXMkYtxeuW0vPpMIyyJjoDUyVwgsYy8SXSxdWs87GBiILNvOiLm0N0n+YuABQul0MKLFLTEvw7ipRbONTjMGw/EQlDDbSNRePns=","req":"{\"method\":\"depositApply\",\"param\":{\"bizUserId\":\"2C0A4A5CAC140A025579BB86C2903526\",\"bizOrderNo\":\"CZ1589876780913\",\"accountSetNo\":\"\",\"amount\":2,\"fee\":0,\"validateType\":1,\"frontUrl\":\"\",\"backUrl\":\"\",\"ordErexpireDatetime\":\"2020-05-20 07:26:20\",\"payMethod\":{\"WECHAT_PUBLIC\":{\"amount\":2,\"acct\":\"\",\"payType\":\"\"}},\"goodsName\":\"computer\",\"industryCode\":\"2413\",\"industryName\":\"电子产品\",\"source\":2,\"summary\":\"AUTO-TEST depositApply\",\"extendInfo\":\"AUTO-TEST this is extendInfo\"},\"service\":\"OrderService\"}"}
+[INFO ] 2020-05-19 16:26:20,915 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"depositApply","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526","bizOrderNo":"CZ1589876780913","accountSetNo":"","amount":2,"fee":0,"validateType":1,"frontUrl":"","backUrl":"","ordErexpireDatetime":"2020-05-20 07:26:20","payMethod":{"WECHAT_PUBLIC":{"amount":2,"acct":"","payType":""}},"goodsName":"computer","industryCode":"2413","industryName":"电子产品","source":2,"summary":"AUTO-TEST depositApply","extendInfo":"AUTO-TEST this is extendInfo"},"service":"OrderService"}
+[INFO ] 2020-05-19 16:26:20,916 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:26:20,916 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:26:20,916 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:26:20
+[INFO ] 2020-05-19 16:26:20,916 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is bTW6ZcImuzzq8xBOb9F+CojZURqd/XrnoCDEee+WtHnCDR97pTiQJzBtpq8lgC+5id6BHfsYGXMkYtxeuW0vPpMIyyJjoDUyVwgsYy8SXSxdWs87GBiILNvOiLm0N0n+YuABQul0MKLFLTEvw7ipRbONTjMGw/EQlDDbSNRePns=
+[INFO ] 2020-05-19 16:26:20,916 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"depositApply","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526","bizOrderNo":"CZ1589876780913","accountSetNo":"","amount":2,"fee":0,"validateType":1,"frontUrl":"","backUrl":"","ordErexpireDatetime":"2020-05-20 07:26:20","payMethod":{"WECHAT_PUBLIC":{"amount":2,"acct":"","payType":""}},"goodsName":"computer","industryCode":"2413","industryName":"电子产品","source":2,"summary":"AUTO-TEST depositApply","extendInfo":"AUTO-TEST this is extendInfo"},"service":"OrderService"}
+[INFO ] 2020-05-19 16:26:21,152 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:26:21,153 method:com.allinpay.autotest.order.OrderServiceTest.depositApply(OrderServiceTest.java:354)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.order.OrderServiceTest.depositApply(OrderServiceTest.java:338)
+	at com.allinpay.autotest.Main.testSuit(Main.java:101)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:26:21,153 method:com.allinpay.autotest.order.OrderServiceTest.depositApply(OrderServiceTest.java:363)
+================OrderAPI: depositApply end================[elapse: 241 ms]
+[INFO ] 2020-05-19 16:26:21,154 method:com.allinpay.autotest.order.OrderServiceTest.withdrawApply(OrderServiceTest.java:387)
+================OrderAPI: withdrawApply begin================
+[INFO ] 2020-05-19 16:26:21,158 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:26:21","sign":"RJ8PGvDy/L7OzxF5b+/4QyBu1FjswxaO9QR7TrFX9u6Wple4Wv53MRZ40Um3saIn9K0a+BMF7ts8pdqfV/e/ySozc4kIRpJP7/bxhbVGLr/AljJD5cBwoxvblKIvZVhb3bHf6ksHTd59RE4mhEX+1TV8Yq3jpbvMjjzrdrDCmKI=","req":"{\"method\":\"withdrawApply\",\"param\":{\"bizUserId\":\"2C0A4A5CAC140A025579BB86C2903526\",\"bizOrderNo\":\"TX1589876781154\",\"accountSetNo\":\"\",\"amount\":1,\"fee\":0,\"validateType\":1,\"backUrl\":\"\",\"ordErexpireDatetime\":\"2020-05-20 07:26:21\",\"payMethod\":{\"WITHDRAW_TLT\":{\"province\":\"ä¸\\u008Aæµ·\",\"city\":\"æµ¦ä¸\\u009Cæ\\u0096°å\\u008Cº\",\"unionBank\":\"03080000\",\"payTypeName\":\"withdraw_tlt\"}},\"bankCardNo\":\"9FD064489F06BBF1CBCC9B586A1F90D690F54232C569E29A68743DED103080C777707EFCC6FDE6B425277631824BE8DC4DA5FAF507957D057D8562528D7C919E95AF4939E44079E49D6DAA86E6E65643281271BE47A4E01D5B5CC97B07909BB69AA6A266A4A49A85AA06C95EEC4C2C491F8764FF5DCEB86CA3B6B502B587427F\",\"bankCardPro\":0,\"withdrawType\":\"T0\",\"industryCode\":\"2413\",\"industryName\":\"电子产品\",\"source\":2,\"summary\":\"AUTO-TEST withdrawApply\",\"extendInfo\":\"AUTO-TEST this is extendInfo\"},\"service\":\"OrderService\"}"}
+[INFO ] 2020-05-19 16:26:21,158 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"withdrawApply","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526","bizOrderNo":"TX1589876781154","accountSetNo":"","amount":1,"fee":0,"validateType":1,"backUrl":"","ordErexpireDatetime":"2020-05-20 07:26:21","payMethod":{"WITHDRAW_TLT":{"province":"ä¸\u008Aæµ·","city":"æµ¦ä¸\u009Cæ\u0096°å\u008Cº","unionBank":"03080000","payTypeName":"withdraw_tlt"}},"bankCardNo":"9FD064489F06BBF1CBCC9B586A1F90D690F54232C569E29A68743DED103080C777707EFCC6FDE6B425277631824BE8DC4DA5FAF507957D057D8562528D7C919E95AF4939E44079E49D6DAA86E6E65643281271BE47A4E01D5B5CC97B07909BB69AA6A266A4A49A85AA06C95EEC4C2C491F8764FF5DCEB86CA3B6B502B587427F","bankCardPro":0,"withdrawType":"T0","industryCode":"2413","industryName":"电子产品","source":2,"summary":"AUTO-TEST withdrawApply","extendInfo":"AUTO-TEST this is extendInfo"},"service":"OrderService"}
+[INFO ] 2020-05-19 16:26:21,159 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:26:21,159 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:26:21,159 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:26:21
+[INFO ] 2020-05-19 16:26:21,159 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is RJ8PGvDy/L7OzxF5b+/4QyBu1FjswxaO9QR7TrFX9u6Wple4Wv53MRZ40Um3saIn9K0a+BMF7ts8pdqfV/e/ySozc4kIRpJP7/bxhbVGLr/AljJD5cBwoxvblKIvZVhb3bHf6ksHTd59RE4mhEX+1TV8Yq3jpbvMjjzrdrDCmKI=
+[INFO ] 2020-05-19 16:26:21,159 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"withdrawApply","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526","bizOrderNo":"TX1589876781154","accountSetNo":"","amount":1,"fee":0,"validateType":1,"backUrl":"","ordErexpireDatetime":"2020-05-20 07:26:21","payMethod":{"WITHDRAW_TLT":{"province":"ä¸\u008Aæµ·","city":"æµ¦ä¸\u009Cæ\u0096°å\u008Cº","unionBank":"03080000","payTypeName":"withdraw_tlt"}},"bankCardNo":"9FD064489F06BBF1CBCC9B586A1F90D690F54232C569E29A68743DED103080C777707EFCC6FDE6B425277631824BE8DC4DA5FAF507957D057D8562528D7C919E95AF4939E44079E49D6DAA86E6E65643281271BE47A4E01D5B5CC97B07909BB69AA6A266A4A49A85AA06C95EEC4C2C491F8764FF5DCEB86CA3B6B502B587427F","bankCardPro":0,"withdrawType":"T0","industryCode":"2413","industryName":"电子产品","source":2,"summary":"AUTO-TEST withdrawApply","extendInfo":"AUTO-TEST this is extendInfo"},"service":"OrderService"}
+[INFO ] 2020-05-19 16:26:21,420 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:26:21,420 method:com.allinpay.autotest.order.OrderServiceTest.withdrawApply(OrderServiceTest.java:490)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.order.OrderServiceTest.withdrawApply(OrderServiceTest.java:470)
+	at com.allinpay.autotest.Main.testSuit(Main.java:112)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:26:21,421 method:com.allinpay.autotest.order.OrderServiceTest.withdrawApply(OrderServiceTest.java:500)
+================OrderAPI: withdrawApply end================[elapse: 267 ms]
+[INFO ] 2020-05-19 16:26:21,423 method:com.allinpay.autotest.order.OrderServiceTest.withdrawApply(OrderServiceTest.java:387)
+================OrderAPI: withdrawApply begin================
+[INFO ] 2020-05-19 16:26:21,427 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:26:21","sign":"GGp6Qrlk+zts7br7jodjt3JfRY9J3hOtdJ/fiwcKgmmQNsxXailEMsOqGLGYko5eohQypQXrznRQuWimtRJPNW4w2lk5D261bD+tOGxk1bMmRc1JMdYGQ4dr9+66Mt16T5K556ufkmI0JTKwh9rNANE1XnYxYH3xJPzoxUK+bGA=","req":"{\"method\":\"withdrawApply\",\"param\":{\"bizUserId\":\"2C0A4A5CAC140A025579BB86C2903526\",\"bizOrderNo\":\"TX1589876781424\",\"accountSetNo\":\"\",\"amount\":1,\"fee\":0,\"validateType\":1,\"backUrl\":\"\",\"ordErexpireDatetime\":\"2020-05-20 07:26:21\",\"payMethod\":{\"VIRTUAL_OUT\":{\"extChannelNo\":\"AUTO-TEST\",\"amount\":1,\"paysummary\":\"AUTO-TEST\",\"extAccount\":\"AUTO-TEST\"}},\"bankCardNo\":\"3AA7A37E1CA2B70ECF5106D25311AF2FB7915A3F7B69F4971DF406FA3D205ADD85D05C0D188E9AF806A82FEA09DC33F40A07E51C9492A70454F76D9C62D0810F8728E1531E3297BEFD5E6F56F49BBF5F668D1891D958D0D94B75FF4D3D26EA29BC93CDEC1DE133D18C3C07FCED61C83081E1320B8390451478720CF1C6FCD2BF\",\"bankCardPro\":0,\"withdrawType\":\"T0\",\"industryCode\":\"2413\",\"industryName\":\"电子产品\",\"source\":2,\"summary\":\"AUTO-TEST withdrawApply\",\"extendInfo\":\"AUTO-TEST this is extendInfo\"},\"service\":\"OrderService\"}"}
+[INFO ] 2020-05-19 16:26:21,428 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"withdrawApply","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526","bizOrderNo":"TX1589876781424","accountSetNo":"","amount":1,"fee":0,"validateType":1,"backUrl":"","ordErexpireDatetime":"2020-05-20 07:26:21","payMethod":{"VIRTUAL_OUT":{"extChannelNo":"AUTO-TEST","amount":1,"paysummary":"AUTO-TEST","extAccount":"AUTO-TEST"}},"bankCardNo":"3AA7A37E1CA2B70ECF5106D25311AF2FB7915A3F7B69F4971DF406FA3D205ADD85D05C0D188E9AF806A82FEA09DC33F40A07E51C9492A70454F76D9C62D0810F8728E1531E3297BEFD5E6F56F49BBF5F668D1891D958D0D94B75FF4D3D26EA29BC93CDEC1DE133D18C3C07FCED61C83081E1320B8390451478720CF1C6FCD2BF","bankCardPro":0,"withdrawType":"T0","industryCode":"2413","industryName":"电子产品","source":2,"summary":"AUTO-TEST withdrawApply","extendInfo":"AUTO-TEST this is extendInfo"},"service":"OrderService"}
+[INFO ] 2020-05-19 16:26:21,428 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:26:21,428 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:26:21,428 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:26:21
+[INFO ] 2020-05-19 16:26:21,429 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is GGp6Qrlk+zts7br7jodjt3JfRY9J3hOtdJ/fiwcKgmmQNsxXailEMsOqGLGYko5eohQypQXrznRQuWimtRJPNW4w2lk5D261bD+tOGxk1bMmRc1JMdYGQ4dr9+66Mt16T5K556ufkmI0JTKwh9rNANE1XnYxYH3xJPzoxUK+bGA=
+[INFO ] 2020-05-19 16:26:21,429 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"withdrawApply","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526","bizOrderNo":"TX1589876781424","accountSetNo":"","amount":1,"fee":0,"validateType":1,"backUrl":"","ordErexpireDatetime":"2020-05-20 07:26:21","payMethod":{"VIRTUAL_OUT":{"extChannelNo":"AUTO-TEST","amount":1,"paysummary":"AUTO-TEST","extAccount":"AUTO-TEST"}},"bankCardNo":"3AA7A37E1CA2B70ECF5106D25311AF2FB7915A3F7B69F4971DF406FA3D205ADD85D05C0D188E9AF806A82FEA09DC33F40A07E51C9492A70454F76D9C62D0810F8728E1531E3297BEFD5E6F56F49BBF5F668D1891D958D0D94B75FF4D3D26EA29BC93CDEC1DE133D18C3C07FCED61C83081E1320B8390451478720CF1C6FCD2BF","bankCardPro":0,"withdrawType":"T0","industryCode":"2413","industryName":"电子产品","source":2,"summary":"AUTO-TEST withdrawApply","extendInfo":"AUTO-TEST this is extendInfo"},"service":"OrderService"}
+[INFO ] 2020-05-19 16:26:21,629 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:26:21,630 method:com.allinpay.autotest.order.OrderServiceTest.withdrawApply(OrderServiceTest.java:490)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.order.OrderServiceTest.withdrawApply(OrderServiceTest.java:470)
+	at com.allinpay.autotest.Main.testSuit(Main.java:114)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:26:21,630 method:com.allinpay.autotest.order.OrderServiceTest.withdrawApply(OrderServiceTest.java:500)
+================OrderAPI: withdrawApply end================[elapse: 207 ms]
+[INFO ] 2020-05-19 16:26:21,630 method:com.allinpay.autotest.order.OrderServiceTest.consumeApply(OrderServiceTest.java:509)
+================OrderAPI: consumeApply begin================
+[INFO ] 2020-05-19 16:26:21,635 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:26:21","sign":"YxwXBrnmsWedlqVMnmAe4MSB7Xgc2njbYgOTSgzgWXzlWMm7ivUIzWHV1V0YuhLBUwnqWILfA/LROa/ed2wDEOiGcYdVVnw64W6nGeXa845cD6FkRZTVqAM19Kg35jAhzcuz8G+6mtkdG9COWsCfhgX+vCmOXTkTP2w7JG2FLWY=","req":"{\"method\":\"consumeApply\",\"param\":{\"payerId\":\"\",\"recieverId\":\"\",\"bizOrderNo\":\"XF1589876781631\",\"amount\":2,\"fee\":0,\"validateType\":1,\"frontUrl\":\"\",\"backUrl\":\"\",\"ordErexpireDatetime\":\"2020-05-20 07:26:21\",\"payMethod\":{\"POSPAY\":{\"amount\":2}},\"goodsName\":\"computer\",\"industryCode\":\"2413\",\"industryName\":\"电子产品\",\"source\":2,\"summary\":\"AUTO-TEST consumeApply\",\"extendInfo\":\"AUTO-TEST this is extendInfo\"},\"service\":\"OrderService\"}"}
+[INFO ] 2020-05-19 16:26:21,636 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"consumeApply","param":{"payerId":"","recieverId":"","bizOrderNo":"XF1589876781631","amount":2,"fee":0,"validateType":1,"frontUrl":"","backUrl":"","ordErexpireDatetime":"2020-05-20 07:26:21","payMethod":{"POSPAY":{"amount":2}},"goodsName":"computer","industryCode":"2413","industryName":"电子产品","source":2,"summary":"AUTO-TEST consumeApply","extendInfo":"AUTO-TEST this is extendInfo"},"service":"OrderService"}
+[INFO ] 2020-05-19 16:26:21,636 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:26:21,636 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:26:21,636 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:26:21
+[INFO ] 2020-05-19 16:26:21,637 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is YxwXBrnmsWedlqVMnmAe4MSB7Xgc2njbYgOTSgzgWXzlWMm7ivUIzWHV1V0YuhLBUwnqWILfA/LROa/ed2wDEOiGcYdVVnw64W6nGeXa845cD6FkRZTVqAM19Kg35jAhzcuz8G+6mtkdG9COWsCfhgX+vCmOXTkTP2w7JG2FLWY=
+[INFO ] 2020-05-19 16:26:21,638 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"consumeApply","param":{"payerId":"","recieverId":"","bizOrderNo":"XF1589876781631","amount":2,"fee":0,"validateType":1,"frontUrl":"","backUrl":"","ordErexpireDatetime":"2020-05-20 07:26:21","payMethod":{"POSPAY":{"amount":2}},"goodsName":"computer","industryCode":"2413","industryName":"电子产品","source":2,"summary":"AUTO-TEST consumeApply","extendInfo":"AUTO-TEST this is extendInfo"},"service":"OrderService"}
+[INFO ] 2020-05-19 16:26:21,890 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:26:21,891 method:com.allinpay.autotest.order.OrderServiceTest.consumeApply(OrderServiceTest.java:869)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.order.OrderServiceTest.consumeApply(OrderServiceTest.java:836)
+	at com.allinpay.autotest.Main.testSuit(Main.java:120)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:26:21,892 method:com.allinpay.autotest.order.OrderServiceTest.consumeApply(OrderServiceTest.java:893)
+================OrderAPI: consumeApply end================[elapse: 261 ms]
+[INFO ] 2020-05-19 16:26:21,892 method:com.allinpay.autotest.order.OrderServiceTest.backPay(OrderServiceTest.java:1827)
+================OrderAPI: backPay begin================
+[INFO ] 2020-05-19 16:26:21,896 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:26:21","sign":"UZoGisgbuC2sAIht0GqkORhG2nnchbKR+f2KNTS8hnPZPa/dDPsv+1aVkcS1xp0rPICZtvTkkBPZjzKAKWT0gqRwBoEBxDj05MIm3jnh8zwO36oAqaocA0MKPy09O1xklx635GhZx8tQgfJPFqoOuD1JuYdeSixB1w6mkZT7q70=","req":"{\"method\":\"pay\",\"param\":{\"bizUserId\":\"2C0A4A5CAC140A025579BB86C2903526\",\"bizOrderNo\":\"XF1589876781631\",\"tradeNo\":\"\",\"verificationCode\":\"\",\"consumerIp\":\"192.168.14.61\"},\"service\":\"OrderService\"}"}
+[INFO ] 2020-05-19 16:26:21,896 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"pay","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526","bizOrderNo":"XF1589876781631","tradeNo":"","verificationCode":"","consumerIp":"192.168.14.61"},"service":"OrderService"}
+[INFO ] 2020-05-19 16:26:21,896 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:26:21,896 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:26:21,897 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:26:21
+[INFO ] 2020-05-19 16:26:21,897 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is UZoGisgbuC2sAIht0GqkORhG2nnchbKR+f2KNTS8hnPZPa/dDPsv+1aVkcS1xp0rPICZtvTkkBPZjzKAKWT0gqRwBoEBxDj05MIm3jnh8zwO36oAqaocA0MKPy09O1xklx635GhZx8tQgfJPFqoOuD1JuYdeSixB1w6mkZT7q70=
+[INFO ] 2020-05-19 16:26:21,897 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"pay","param":{"bizUserId":"2C0A4A5CAC140A025579BB86C2903526","bizOrderNo":"XF1589876781631","tradeNo":"","verificationCode":"","consumerIp":"192.168.14.61"},"service":"OrderService"}
+[INFO ] 2020-05-19 16:26:22,051 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:26:22,052 method:com.allinpay.autotest.order.OrderServiceTest.backPay(OrderServiceTest.java:1860)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.order.OrderServiceTest.backPay(OrderServiceTest.java:1845)
+	at com.allinpay.autotest.Main.testSuit(Main.java:122)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:26:22,053 method:com.allinpay.autotest.order.OrderServiceTest.backPay(OrderServiceTest.java:1870)
+================OrderAPI: backPay end================[elapse: 161 ms]
+[INFO ] 2020-05-19 16:28:21,090 method:com.allinpay.autotest.member.MemberServiceTest.createMember(MemberServiceTest.java:22)
+================MemberAPI: createMember begin================
+[INFO ] 2020-05-19 16:28:26,127 method:com.allinpay.autotest.member.MemberServiceTest.createMember(MemberServiceTest.java:31)
+[bizUserId=2C0C5886AC140A025579BB869FAB6D6B, memberType=3, source=2]
+[INFO ] 2020-05-19 16:28:26,841 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:28:26","sign":"Yp3mQDSXbu/59qK5Jn6pSJKXKWr9gU3d41VKPWpIqCQR9tSwuDOrEhIUb5hrHJYtwqVozC0Dp25a4TB+HgPYTV+Fgb1jtp2rlTPXPEOVF63h7Y7irJHhd+fvAyNJRGoEnPqQkyI4pU2tuGGwj513vg0M8TWZ2WTPZ/tklmPqKcQ=","req":"{\"method\":\"createMember\",\"param\":{\"bizUserId\":\"2C0C5886AC140A025579BB869FAB6D6B\",\"memberType\":3,\"source\":2},\"service\":\"MemberService\"}"}
+[INFO ] 2020-05-19 16:28:26,842 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"createMember","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B","memberType":3,"source":2},"service":"MemberService"}
+[INFO ] 2020-05-19 16:28:26,842 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:28:26,843 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:28:26,843 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:28:26
+[INFO ] 2020-05-19 16:28:26,843 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is Yp3mQDSXbu/59qK5Jn6pSJKXKWr9gU3d41VKPWpIqCQR9tSwuDOrEhIUb5hrHJYtwqVozC0Dp25a4TB+HgPYTV+Fgb1jtp2rlTPXPEOVF63h7Y7irJHhd+fvAyNJRGoEnPqQkyI4pU2tuGGwj513vg0M8TWZ2WTPZ/tklmPqKcQ=
+[INFO ] 2020-05-19 16:28:26,843 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"createMember","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B","memberType":3,"source":2},"service":"MemberService"}
+[INFO ] 2020-05-19 16:28:29,637 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:28:29,657 method:com.allinpay.autotest.member.MemberServiceTest.createMember(MemberServiceTest.java:47)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.member.MemberServiceTest.createMember(MemberServiceTest.java:33)
+	at com.allinpay.autotest.Main.testSuit(Main.java:21)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:28:29,664 method:com.allinpay.autotest.member.MemberServiceTest.createMember(MemberServiceTest.java:52)
+================MemberAPI: createMember end================[elapse: 8566 ms]
+[INFO ] 2020-05-19 16:28:29,665 method:com.allinpay.autotest.member.MemberServiceTest.bindPhone(MemberServiceTest.java:62)
+================MemberAPI: bindPhone begin================
+[INFO ] 2020-05-19 16:28:29,668 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:28:29","sign":"VE5YPszAFHkl56AOx96/6Fzp3AU1tACTiwivGqBLD6CVG+Yu3IaGTCam+BFPmTE3rObYlvxZ7xDobfLUpPhYdQNDAnf86fxEY/5MpbBCSViZ3tohJSmw96aEioS0KrrYItpgLF2t6BZvgpXGK1tVUDmAMMXVsCZM3w/5ktzrm2E=","req":"{\"method\":\"bindPhone\",\"param\":{\"bizUserId\":\"2C0C5886AC140A025579BB869FAB6D6B\",\"phone\":\"13818589429\",\"verificationCode\":\"11111\"},\"service\":\"MemberService\"}"}
+[INFO ] 2020-05-19 16:28:29,669 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"bindPhone","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B","phone":"13818589429","verificationCode":"11111"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:28:29,669 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:28:29,670 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:28:29,670 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:28:29
+[INFO ] 2020-05-19 16:28:29,670 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is VE5YPszAFHkl56AOx96/6Fzp3AU1tACTiwivGqBLD6CVG+Yu3IaGTCam+BFPmTE3rObYlvxZ7xDobfLUpPhYdQNDAnf86fxEY/5MpbBCSViZ3tohJSmw96aEioS0KrrYItpgLF2t6BZvgpXGK1tVUDmAMMXVsCZM3w/5ktzrm2E=
+[INFO ] 2020-05-19 16:28:29,670 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"bindPhone","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B","phone":"13818589429","verificationCode":"11111"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:28:30,077 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:28:30,078 method:com.allinpay.autotest.member.MemberServiceTest.bindPhone(MemberServiceTest.java:86)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.member.MemberServiceTest.bindPhone(MemberServiceTest.java:69)
+	at com.allinpay.autotest.Main.testSuit(Main.java:24)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:28:30,079 method:com.allinpay.autotest.member.MemberServiceTest.bindPhone(MemberServiceTest.java:90)
+================MemberAPI: bindPhone end================[elapse: 414 ms]
+[INFO ] 2020-05-19 16:28:30,080 method:com.allinpay.autotest.member.MemberServiceTest.setRealName(MemberServiceTest.java:100)
+================MemberAPI: setRealName begin================
+[INFO ] 2020-05-19 16:28:30,097 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:28:30","sign":"FCvpswuUDVS+OIsAMh6QddHuRHKMdHOaI7b4tJoV9rTKnum09UX9RYco5S5a2dCNbNo34uu0lxVniwK8juvbH1MPnQSigNezBWKdGqQvM8Xg7Nx7bfd3rA9D0zAKdcUbYnxc3Oh6ZtlhNl6PGA07H8ovJ7iQSYVv7FIHoRXUh+M=","req":"{\"method\":\"setRealName\",\"param\":{\"bizUserId\":\"2C0C5886AC140A025579BB869FAB6D6B\",\"isAuth\":\"true\",\"name\":\"ä¸\\u0081ä¼\\u009Aäº\\u0091\",\"identityType\":\"1\",\"identityNo\":\"0F369844A4176BA1D05B8C8FA3D66528EC801C3695380253D74E4D49FFB4EB3895C9124CD5ED21CC2BD7225D00E9071FBD3FAD769F5310AA7EFFC65D14F7A39145FECD23D9230C13FD745F734F5A068D9279C37727A220C885D12CC068E707B0B76F7B61430778DBD4B9CCFE535896AF7CD1D7EAC51CF9C5BBE0BBC97EF080EA\"},\"service\":\"MemberService\"}"}
+[INFO ] 2020-05-19 16:28:30,097 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"setRealName","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B","isAuth":"true","name":"ä¸\u0081ä¼\u009Aäº\u0091","identityType":"1","identityNo":"0F369844A4176BA1D05B8C8FA3D66528EC801C3695380253D74E4D49FFB4EB3895C9124CD5ED21CC2BD7225D00E9071FBD3FAD769F5310AA7EFFC65D14F7A39145FECD23D9230C13FD745F734F5A068D9279C37727A220C885D12CC068E707B0B76F7B61430778DBD4B9CCFE535896AF7CD1D7EAC51CF9C5BBE0BBC97EF080EA"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:28:30,098 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:28:30,098 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:28:30,098 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:28:30
+[INFO ] 2020-05-19 16:28:30,098 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is FCvpswuUDVS+OIsAMh6QddHuRHKMdHOaI7b4tJoV9rTKnum09UX9RYco5S5a2dCNbNo34uu0lxVniwK8juvbH1MPnQSigNezBWKdGqQvM8Xg7Nx7bfd3rA9D0zAKdcUbYnxc3Oh6ZtlhNl6PGA07H8ovJ7iQSYVv7FIHoRXUh+M=
+[INFO ] 2020-05-19 16:28:30,098 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"setRealName","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B","isAuth":"true","name":"ä¸\u0081ä¼\u009Aäº\u0091","identityType":"1","identityNo":"0F369844A4176BA1D05B8C8FA3D66528EC801C3695380253D74E4D49FFB4EB3895C9124CD5ED21CC2BD7225D00E9071FBD3FAD769F5310AA7EFFC65D14F7A39145FECD23D9230C13FD745F734F5A068D9279C37727A220C885D12CC068E707B0B76F7B61430778DBD4B9CCFE535896AF7CD1D7EAC51CF9C5BBE0BBC97EF080EA"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:28:30,441 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:28:30,442 method:com.allinpay.autotest.member.MemberServiceTest.setRealName(MemberServiceTest.java:126)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.member.MemberServiceTest.setRealName(MemberServiceTest.java:109)
+	at com.allinpay.autotest.Main.testSuit(Main.java:27)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:28:30,444 method:com.allinpay.autotest.member.MemberServiceTest.setRealName(MemberServiceTest.java:130)
+================MemberAPI: setRealName end================[elapse: 363 ms]
+[INFO ] 2020-05-19 16:28:30,444 method:com.allinpay.autotest.member.MemberServiceTest.getMemberInfo(MemberServiceTest.java:135)
+================MemberAPI: getMemberInfo begin================
+[INFO ] 2020-05-19 16:28:30,449 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:28:30","sign":"GPcKtkmW5P58GXpq8NzJ2a7cRQhB75Gy7/zHnQyEs7chjldpjYld+dZaBhKtty+eKkeVYQHLZgjwZ67YtT+ldgHzFU8c3zGHc8uarpHnzzYgw6Rpgac++UXSH48sEYHZkSH4WjVPd8W99mW9wSSfojv88yDItgqx3/a76xvCySc=","req":"{\"method\":\"getMemberInfo\",\"param\":{\"bizUserId\":\"2C0C5886AC140A025579BB869FAB6D6B\"},\"service\":\"MemberService\"}"}
+[INFO ] 2020-05-19 16:28:30,449 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"getMemberInfo","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:28:30,449 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:28:30,450 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:28:30,450 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:28:30
+[INFO ] 2020-05-19 16:28:30,450 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is GPcKtkmW5P58GXpq8NzJ2a7cRQhB75Gy7/zHnQyEs7chjldpjYld+dZaBhKtty+eKkeVYQHLZgjwZ67YtT+ldgHzFU8c3zGHc8uarpHnzzYgw6Rpgac++UXSH48sEYHZkSH4WjVPd8W99mW9wSSfojv88yDItgqx3/a76xvCySc=
+[INFO ] 2020-05-19 16:28:30,450 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"getMemberInfo","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:28:30,944 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:28:30,945 method:com.allinpay.autotest.member.MemberServiceTest.getMemberInfo(MemberServiceTest.java:157)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.member.MemberServiceTest.getMemberInfo(MemberServiceTest.java:140)
+	at com.allinpay.autotest.Main.testSuit(Main.java:30)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:28:30,947 method:com.allinpay.autotest.member.MemberServiceTest.getMemberInfo(MemberServiceTest.java:161)
+================MemberAPI: getMemberInfo end================[elapse: 502 ms]
+[INFO ] 2020-05-19 16:28:30,947 method:com.allinpay.autotest.member.MemberServiceTest.applyBindBankCard(MemberServiceTest.java:170)
+================MemberAPI: applyBindBankCard begin================
+[INFO ] 2020-05-19 16:28:30,955 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:28:30","sign":"dE9r2EYsakZnMJ6QeN3MHneoxNXHATvCsGMUhki5HZlhce4ZmF/T+i3o9aipALcmDiyABvuFurID5ynOof0ItPOA5QA0Y96Xu7LNIgV/SqO3IyTTRf8OscLWcLWFSzWPv7FgFb9eTSH6LXTOdjBiMrjdWNo107NFiGuKcshop9k=","req":"{\"method\":\"applyBindBankCard\",\"param\":{\"bizUserId\":\"2C0C5886AC140A025579BB869FAB6D6B\",\"phone\":\"13818589429\",\"cardCheck\":2,\"cardNo\":\"314979B943A911929065E76149FED80549FCBEFD6DDA22E257A83F596DE165E8EB86B2DA9299C493DED583066FB86EE4D30206C35B0BA78C8285DDFEFD6F4FBC4E2E5FD9AFCB99CB39A4C675DB64AF5A24039BC027D467F400B3F24DE359543D19B102CB878A3C192413FD9E80E2990B8C787209024305A150121DB535B61A21\",\"name\":\"ä¸\\u0081ä¼\\u009Aäº\\u0091\",\"identityNo\":\"555CA88E1DE90E95ABB5736A21302133062602989BF488E4D9FB902CA2820F1D1CC690A25A6EBB74F8F03BC930DBD3DA85B67DF53D529179C2863A8EBA0FE5B5781FBA732C83FBC6794ED3422065CA32C3DEF6C863ADE7A2704595052381E181E9E44D08CA888CE9414B18044419272ADE481176C736DB93CF1346535D66E9E7\",\"identityType\":1,\"validate\":\"0644B9DC603F4FBD21818BE886CE4AC7E1769374CE65391430E86676919F4018CCB2F77A9E185E18FC818EBC4C8D761182C82121B9E37129C562B53D8BCFFEFD725D8F78B1754F32A1F770D718B92C7D853E9786B2A3544AC941A3001C74A1194E71F893EC161B25A3EBC58B7D64321257CB6966438AA1E4C5C4039876B8AB96\",\"cvv2\":\"1234\",\"isSafeCard\":true,\"unionBank\":\"\"},\"service\":\"MemberService\"}"}
+[INFO ] 2020-05-19 16:28:30,955 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"applyBindBankCard","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B","phone":"13818589429","cardCheck":2,"cardNo":"314979B943A911929065E76149FED80549FCBEFD6DDA22E257A83F596DE165E8EB86B2DA9299C493DED583066FB86EE4D30206C35B0BA78C8285DDFEFD6F4FBC4E2E5FD9AFCB99CB39A4C675DB64AF5A24039BC027D467F400B3F24DE359543D19B102CB878A3C192413FD9E80E2990B8C787209024305A150121DB535B61A21","name":"ä¸\u0081ä¼\u009Aäº\u0091","identityNo":"555CA88E1DE90E95ABB5736A21302133062602989BF488E4D9FB902CA2820F1D1CC690A25A6EBB74F8F03BC930DBD3DA85B67DF53D529179C2863A8EBA0FE5B5781FBA732C83FBC6794ED3422065CA32C3DEF6C863ADE7A2704595052381E181E9E44D08CA888CE9414B18044419272ADE481176C736DB93CF1346535D66E9E7","identityType":1,"validate":"0644B9DC603F4FBD21818BE886CE4AC7E1769374CE65391430E86676919F4018CCB2F77A9E185E18FC818EBC4C8D761182C82121B9E37129C562B53D8BCFFEFD725D8F78B1754F32A1F770D718B92C7D853E9786B2A3544AC941A3001C74A1194E71F893EC161B25A3EBC58B7D64321257CB6966438AA1E4C5C4039876B8AB96","cvv2":"1234","isSafeCard":true,"unionBank":""},"service":"MemberService"}
+[INFO ] 2020-05-19 16:28:30,956 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:28:30,956 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:28:30,956 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:28:30
+[INFO ] 2020-05-19 16:28:30,956 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is dE9r2EYsakZnMJ6QeN3MHneoxNXHATvCsGMUhki5HZlhce4ZmF/T+i3o9aipALcmDiyABvuFurID5ynOof0ItPOA5QA0Y96Xu7LNIgV/SqO3IyTTRf8OscLWcLWFSzWPv7FgFb9eTSH6LXTOdjBiMrjdWNo107NFiGuKcshop9k=
+[INFO ] 2020-05-19 16:28:30,956 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"applyBindBankCard","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B","phone":"13818589429","cardCheck":2,"cardNo":"314979B943A911929065E76149FED80549FCBEFD6DDA22E257A83F596DE165E8EB86B2DA9299C493DED583066FB86EE4D30206C35B0BA78C8285DDFEFD6F4FBC4E2E5FD9AFCB99CB39A4C675DB64AF5A24039BC027D467F400B3F24DE359543D19B102CB878A3C192413FD9E80E2990B8C787209024305A150121DB535B61A21","name":"ä¸\u0081ä¼\u009Aäº\u0091","identityNo":"555CA88E1DE90E95ABB5736A21302133062602989BF488E4D9FB902CA2820F1D1CC690A25A6EBB74F8F03BC930DBD3DA85B67DF53D529179C2863A8EBA0FE5B5781FBA732C83FBC6794ED3422065CA32C3DEF6C863ADE7A2704595052381E181E9E44D08CA888CE9414B18044419272ADE481176C736DB93CF1346535D66E9E7","identityType":1,"validate":"0644B9DC603F4FBD21818BE886CE4AC7E1769374CE65391430E86676919F4018CCB2F77A9E185E18FC818EBC4C8D761182C82121B9E37129C562B53D8BCFFEFD725D8F78B1754F32A1F770D718B92C7D853E9786B2A3544AC941A3001C74A1194E71F893EC161B25A3EBC58B7D64321257CB6966438AA1E4C5C4039876B8AB96","cvv2":"1234","isSafeCard":true,"unionBank":""},"service":"MemberService"}
+[INFO ] 2020-05-19 16:28:31,228 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:28:31,229 method:com.allinpay.autotest.member.MemberServiceTest.applyBindBankCard(MemberServiceTest.java:231)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.member.MemberServiceTest.applyBindBankCard(MemberServiceTest.java:199)
+	at com.allinpay.autotest.Main.testSuit(Main.java:43)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:28:31,230 method:com.allinpay.autotest.member.MemberServiceTest.applyBindBankCard(MemberServiceTest.java:236)
+================MemberAPI: applyBindBankCard end================[elapse: 282 ms]
+[INFO ] 2020-05-19 16:28:31,231 method:com.allinpay.autotest.member.MemberServiceTest.setSafeCard(MemberServiceTest.java:284)
+================MemberAPI: setSafeCard begin================
+[INFO ] 2020-05-19 16:28:31,246 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:28:31","sign":"TPOUyBwLKM0jXduL+gAuQuJjbBOWzg63ICVVge9oafYcOyIajOZkB4igPmZ58N6qNww7G0U4uhaXTfGqse3/aDBH6OLPUkSmHxKHGtyrtpHKXKZFaTJbh4LJpAAyPuHD5K8/by0FeqV5TmBc++Du7DymVhPdiBA6621WWE7v36s=","req":"{\"method\":\"setSafeCard\",\"param\":{\"bizUserId\":\"2C0C5886AC140A025579BB869FAB6D6B\",\"cardNo\":\"9E5DBF2C2928B14218503D37AC76AC8230F193918D99C19EEAF0DCA20BC096894C8C3BA7447B69290F519825F0C9898A4AD0328A38E042F401836EB530C3B9B274A24D3DF93A909F0D6D441DF005E6B986A8C4853AFD57AA5BFA320331AA89E3C4DE180ABE7CBDF21B07249CA68917BBCBB4C547BA4331754CF589642165AAFF\",\"setSafeCard\":true},\"service\":\"MemberService\"}"}
+[INFO ] 2020-05-19 16:28:31,246 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"setSafeCard","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B","cardNo":"9E5DBF2C2928B14218503D37AC76AC8230F193918D99C19EEAF0DCA20BC096894C8C3BA7447B69290F519825F0C9898A4AD0328A38E042F401836EB530C3B9B274A24D3DF93A909F0D6D441DF005E6B986A8C4853AFD57AA5BFA320331AA89E3C4DE180ABE7CBDF21B07249CA68917BBCBB4C547BA4331754CF589642165AAFF","setSafeCard":true},"service":"MemberService"}
+[INFO ] 2020-05-19 16:28:31,247 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:28:31,247 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:28:31,247 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:28:31
+[INFO ] 2020-05-19 16:28:31,248 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is TPOUyBwLKM0jXduL+gAuQuJjbBOWzg63ICVVge9oafYcOyIajOZkB4igPmZ58N6qNww7G0U4uhaXTfGqse3/aDBH6OLPUkSmHxKHGtyrtpHKXKZFaTJbh4LJpAAyPuHD5K8/by0FeqV5TmBc++Du7DymVhPdiBA6621WWE7v36s=
+[INFO ] 2020-05-19 16:28:31,249 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"setSafeCard","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B","cardNo":"9E5DBF2C2928B14218503D37AC76AC8230F193918D99C19EEAF0DCA20BC096894C8C3BA7447B69290F519825F0C9898A4AD0328A38E042F401836EB530C3B9B274A24D3DF93A909F0D6D441DF005E6B986A8C4853AFD57AA5BFA320331AA89E3C4DE180ABE7CBDF21B07249CA68917BBCBB4C547BA4331754CF589642165AAFF","setSafeCard":true},"service":"MemberService"}
+[INFO ] 2020-05-19 16:28:31,493 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:28:31,493 method:com.allinpay.autotest.member.MemberServiceTest.setSafeCard(MemberServiceTest.java:310)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.member.MemberServiceTest.setSafeCard(MemberServiceTest.java:292)
+	at com.allinpay.autotest.Main.testSuit(Main.java:54)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:28:31,495 method:com.allinpay.autotest.member.MemberServiceTest.setSafeCard(MemberServiceTest.java:315)
+================MemberAPI: setSafeCard end================[elapse: 263 ms]
+[INFO ] 2020-05-19 16:28:31,497 method:com.allinpay.autotest.member.MemberServiceTest.queryBankCard(MemberServiceTest.java:321)
+================MemberAPI: queryBankCard begin================
+[INFO ] 2020-05-19 16:28:31,502 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:28:31","sign":"CSbA+1KmaLy845v9FyZj3Wayrae8gGE5T5MKpbv2qTbBAe2lFmRZBFpIApXF2sgmR4OeH9DRR0aIuFPmgYZ4ZCUAfuEoiex0smzcBb9aPN7Y8u2AvCZUOrgQYMLdEYzQ9srCs9BeFgcG8rKNWnm1gZtwpZ81sRuL6F8563XMREw=","req":"{\"method\":\"queryBankCard\",\"param\":{\"bizUserId\":\"2C0C5886AC140A025579BB869FAB6D6B\",\"cardNo\":\"5DD35516133E702FC6DB409C91AEC1AA845CA088176986C4011CBB80C12C502C2D3A07407BD612E670A4B732A0ADB395949D52BBA0EA269E2516205F5B9C2B0F0887072037A176B5F38C0E2F8653158FFC3E77FF66E1FE98B1674517207DC4168A99B33780DBE0606AA30978CFA548928EF2EDFBFBA6647766E9EC3B179E283A\"},\"service\":\"MemberService\"}"}
+[INFO ] 2020-05-19 16:28:31,503 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"queryBankCard","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B","cardNo":"5DD35516133E702FC6DB409C91AEC1AA845CA088176986C4011CBB80C12C502C2D3A07407BD612E670A4B732A0ADB395949D52BBA0EA269E2516205F5B9C2B0F0887072037A176B5F38C0E2F8653158FFC3E77FF66E1FE98B1674517207DC4168A99B33780DBE0606AA30978CFA548928EF2EDFBFBA6647766E9EC3B179E283A"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:28:31,503 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:28:31,504 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:28:31,504 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:28:31
+[INFO ] 2020-05-19 16:28:31,504 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is CSbA+1KmaLy845v9FyZj3Wayrae8gGE5T5MKpbv2qTbBAe2lFmRZBFpIApXF2sgmR4OeH9DRR0aIuFPmgYZ4ZCUAfuEoiex0smzcBb9aPN7Y8u2AvCZUOrgQYMLdEYzQ9srCs9BeFgcG8rKNWnm1gZtwpZ81sRuL6F8563XMREw=
+[INFO ] 2020-05-19 16:28:31,504 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"queryBankCard","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B","cardNo":"5DD35516133E702FC6DB409C91AEC1AA845CA088176986C4011CBB80C12C502C2D3A07407BD612E670A4B732A0ADB395949D52BBA0EA269E2516205F5B9C2B0F0887072037A176B5F38C0E2F8653158FFC3E77FF66E1FE98B1674517207DC4168A99B33780DBE0606AA30978CFA548928EF2EDFBFBA6647766E9EC3B179E283A"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:28:31,874 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:28:31,875 method:com.allinpay.autotest.member.MemberServiceTest.queryBankCard(MemberServiceTest.java:347)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.member.MemberServiceTest.queryBankCard(MemberServiceTest.java:329)
+	at com.allinpay.autotest.Main.testSuit(Main.java:57)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:28:31,876 method:com.allinpay.autotest.member.MemberServiceTest.queryBankCard(MemberServiceTest.java:352)
+================MemberAPI: queryBankCard end================[elapse: 379 ms]
+[INFO ] 2020-05-19 16:28:31,877 method:com.allinpay.autotest.member.MemberServiceTest.queryBankCard(MemberServiceTest.java:321)
+================MemberAPI: queryBankCard begin================
+[INFO ] 2020-05-19 16:28:31,880 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:28:31","sign":"FRHXxAt3LJK1aBc9pFOlChlMXjWJ8N4gSExCmAsuAetisWlhfI9SiIzdCHGqdEqo6xCGTJPMgq/vqmdDmpbfvH15123wcGd16wUA7mxBNGEHU8v/Or+k36cW1QP4KY6Zt1FCxzguRjIjyYkh8eW7mkrJNMGfgIIQPRHvzIUaqNQ=","req":"{\"method\":\"queryBankCard\",\"param\":{\"bizUserId\":\"2C0C5886AC140A025579BB869FAB6D6B\",\"cardNo\":\"404B0F23A6873B36EAEF2EDC122E10DA7B94AF197823B49CC07DE7B494AF958FE63F0FB6CB996229229C7CDADBA971C9F90B8BA1F166481F670CB6236ECC1AF27ABC16E6F2F4EEECF0682E9A5B2F9BE8A85B7A3ECCAE2E633BB858CE498F369D0115171B3C38DD3317F469CEE8E3695C28EC45036054A30466EC2020951FE3C3\"},\"service\":\"MemberService\"}"}
+[INFO ] 2020-05-19 16:28:31,881 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"queryBankCard","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B","cardNo":"404B0F23A6873B36EAEF2EDC122E10DA7B94AF197823B49CC07DE7B494AF958FE63F0FB6CB996229229C7CDADBA971C9F90B8BA1F166481F670CB6236ECC1AF27ABC16E6F2F4EEECF0682E9A5B2F9BE8A85B7A3ECCAE2E633BB858CE498F369D0115171B3C38DD3317F469CEE8E3695C28EC45036054A30466EC2020951FE3C3"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:28:31,881 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:28:31,881 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:28:31,881 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:28:31
+[INFO ] 2020-05-19 16:28:31,882 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is FRHXxAt3LJK1aBc9pFOlChlMXjWJ8N4gSExCmAsuAetisWlhfI9SiIzdCHGqdEqo6xCGTJPMgq/vqmdDmpbfvH15123wcGd16wUA7mxBNGEHU8v/Or+k36cW1QP4KY6Zt1FCxzguRjIjyYkh8eW7mkrJNMGfgIIQPRHvzIUaqNQ=
+[INFO ] 2020-05-19 16:28:31,882 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"queryBankCard","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B","cardNo":"404B0F23A6873B36EAEF2EDC122E10DA7B94AF197823B49CC07DE7B494AF958FE63F0FB6CB996229229C7CDADBA971C9F90B8BA1F166481F670CB6236ECC1AF27ABC16E6F2F4EEECF0682E9A5B2F9BE8A85B7A3ECCAE2E633BB858CE498F369D0115171B3C38DD3317F469CEE8E3695C28EC45036054A30466EC2020951FE3C3"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:28:32,284 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:28:32,284 method:com.allinpay.autotest.member.MemberServiceTest.queryBankCard(MemberServiceTest.java:347)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.member.MemberServiceTest.queryBankCard(MemberServiceTest.java:329)
+	at com.allinpay.autotest.Main.testSuit(Main.java:58)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:28:32,285 method:com.allinpay.autotest.member.MemberServiceTest.queryBankCard(MemberServiceTest.java:352)
+================MemberAPI: queryBankCard end================[elapse: 408 ms]
+[INFO ] 2020-05-19 16:28:32,285 method:com.allinpay.autotest.member.MemberServiceTest.unbindBankCard(MemberServiceTest.java:359)
+================MemberAPI: unbindBankCard begin================
+[INFO ] 2020-05-19 16:28:32,289 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:28:32","sign":"YI84a8/igzdWc+kPa1eXI6YH1vZSpt/CBhntExmlXMgEwvG3zFxH8FHEXcgm5ZubBXYLcvH4XhpQbYJ5xVd1IQ/sapbedMHnEMgm1sPzE1c37epqoovnEALWonvjFYK4fdATp6dvkVllByawfRac+QsZzNUwPgGswm9nS3DJJtU=","req":"{\"method\":\"unbindBankCard\",\"param\":{\"bizUserId\":\"2C0C5886AC140A025579BB869FAB6D6B\",\"cardNo\":\"52411303460050C1FA5C13AC44E5BCA210E7E4A292069302DB340462EF4702EEEC082864D6073CDAE765A111047DD8286A7B34444B0127F3F40D5CE6EAA67A45C90DB14F7C0773F489B58A9DF2F55C6EC849FCB59E30D0A137E909D293176808512D046C03BFC8ACF37D31C65675A98080CBACA71B321251F531BF1BB1D7F75F\"},\"service\":\"MemberService\"}"}
+[INFO ] 2020-05-19 16:28:32,290 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"unbindBankCard","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B","cardNo":"52411303460050C1FA5C13AC44E5BCA210E7E4A292069302DB340462EF4702EEEC082864D6073CDAE765A111047DD8286A7B34444B0127F3F40D5CE6EAA67A45C90DB14F7C0773F489B58A9DF2F55C6EC849FCB59E30D0A137E909D293176808512D046C03BFC8ACF37D31C65675A98080CBACA71B321251F531BF1BB1D7F75F"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:28:32,290 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:28:32,290 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:28:32,290 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:28:32
+[INFO ] 2020-05-19 16:28:32,290 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is YI84a8/igzdWc+kPa1eXI6YH1vZSpt/CBhntExmlXMgEwvG3zFxH8FHEXcgm5ZubBXYLcvH4XhpQbYJ5xVd1IQ/sapbedMHnEMgm1sPzE1c37epqoovnEALWonvjFYK4fdATp6dvkVllByawfRac+QsZzNUwPgGswm9nS3DJJtU=
+[INFO ] 2020-05-19 16:28:32,291 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"unbindBankCard","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B","cardNo":"52411303460050C1FA5C13AC44E5BCA210E7E4A292069302DB340462EF4702EEEC082864D6073CDAE765A111047DD8286A7B34444B0127F3F40D5CE6EAA67A45C90DB14F7C0773F489B58A9DF2F55C6EC849FCB59E30D0A137E909D293176808512D046C03BFC8ACF37D31C65675A98080CBACA71B321251F531BF1BB1D7F75F"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:28:32,693 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:28:32,694 method:com.allinpay.autotest.member.MemberServiceTest.unbindBankCard(MemberServiceTest.java:385)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.member.MemberServiceTest.unbindBankCard(MemberServiceTest.java:367)
+	at com.allinpay.autotest.Main.testSuit(Main.java:61)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:28:32,695 method:com.allinpay.autotest.member.MemberServiceTest.unbindBankCard(MemberServiceTest.java:390)
+================MemberAPI: unbindBankCard end================[elapse: 409 ms]
+[INFO ] 2020-05-19 16:28:32,695 method:com.allinpay.autotest.member.MemberServiceTest.lockMember(MemberServiceTest.java:397)
+================MemberAPI: lockMember begin================
+[INFO ] 2020-05-19 16:28:32,699 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:28:32","sign":"EFvRXyr2UaAIsLCWdJMuVuH9u/kGmD0g98eNyC5plJvNTMW36CBpUibcQ6a66bAJnrc+M8Nre8IqnwhqpKQ3yguhhUPB9D76VPLDLrEaqZkg3ehfZ4aUSg4ff2Gv0ljK5fyzE+9clEfshZm0U3vB6YGseC7eSqogdcrDYJh4iOQ=","req":"{\"method\":\"lockMember\",\"param\":{\"bizUserId\":\"2C0C5886AC140A025579BB869FAB6D6B\"},\"service\":\"MemberService\"}"}
+[INFO ] 2020-05-19 16:28:32,699 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"lockMember","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:28:32,699 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:28:32,700 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:28:32,700 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:28:32
+[INFO ] 2020-05-19 16:28:32,700 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is EFvRXyr2UaAIsLCWdJMuVuH9u/kGmD0g98eNyC5plJvNTMW36CBpUibcQ6a66bAJnrc+M8Nre8IqnwhqpKQ3yguhhUPB9D76VPLDLrEaqZkg3ehfZ4aUSg4ff2Gv0ljK5fyzE+9clEfshZm0U3vB6YGseC7eSqogdcrDYJh4iOQ=
+[INFO ] 2020-05-19 16:28:32,700 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"lockMember","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:28:33,004 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:28:33,005 method:com.allinpay.autotest.member.MemberServiceTest.lockMember(MemberServiceTest.java:422)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.member.MemberServiceTest.lockMember(MemberServiceTest.java:404)
+	at com.allinpay.autotest.Main.testSuit(Main.java:64)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:28:33,006 method:com.allinpay.autotest.member.MemberServiceTest.lockMember(MemberServiceTest.java:427)
+================MemberAPI: lockMember end================[elapse: 310 ms]
+[INFO ] 2020-05-19 16:28:33,007 method:com.allinpay.autotest.member.MemberServiceTest.unlockMember(MemberServiceTest.java:433)
+================MemberAPI: unlockMember begin================
+[INFO ] 2020-05-19 16:28:33,009 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:28:33","sign":"YjmgytmzcDiWAfnXQFryQzfpEBPqljshSmWyCplHbY7oP7ilDYsl5OCdYAZ895zkRcbJ6LOBae5Y4r7VrV1PLyP1a3t8vTrr5EJ0rdfuuQZlUTAMF2KnGr7qNk8m45RlgifmDlhBi3vM9CuB0TEoWVoJ8aQT7ywp7kS5HscBxpA=","req":"{\"method\":\"unlockMember\",\"param\":{\"bizUserId\":\"2C0C5886AC140A025579BB869FAB6D6B\"},\"service\":\"MemberService\"}"}
+[INFO ] 2020-05-19 16:28:33,010 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"unlockMember","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:28:33,010 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:28:33,010 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:28:33,010 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:28:33
+[INFO ] 2020-05-19 16:28:33,010 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is YjmgytmzcDiWAfnXQFryQzfpEBPqljshSmWyCplHbY7oP7ilDYsl5OCdYAZ895zkRcbJ6LOBae5Y4r7VrV1PLyP1a3t8vTrr5EJ0rdfuuQZlUTAMF2KnGr7qNk8m45RlgifmDlhBi3vM9CuB0TEoWVoJ8aQT7ywp7kS5HscBxpA=
+[INFO ] 2020-05-19 16:28:33,010 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"unlockMember","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:28:33,645 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:28:33,646 method:com.allinpay.autotest.member.MemberServiceTest.unlockMember(MemberServiceTest.java:458)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.member.MemberServiceTest.unlockMember(MemberServiceTest.java:440)
+	at com.allinpay.autotest.Main.testSuit(Main.java:67)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:28:33,647 method:com.allinpay.autotest.member.MemberServiceTest.unlockMember(MemberServiceTest.java:463)
+================MemberAPI: unlockMember end================[elapse: 640 ms]
+[INFO ] 2020-05-19 16:28:33,648 method:com.allinpay.autotest.member.MemberServiceTest.vspTermidService(MemberServiceTest.java:468)
+================MemberAPI: vspTermidService begin================
+[INFO ] 2020-05-19 16:28:33,651 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:28:33","sign":"PP7RRGzIUW5qj6Flgnbj3nUIBhtxdU0M+8vgJ7J/vlxM+uSaBjyKf31n6lGUV+vAh7T51D2xSCezKoC6F96VOR/juWVLYoQ4opQ4zISOA9WzVhetndVHG4DzY/Z8EP5DFo7rM4/bhNvI2Im3YmH+dRw4QE/S9rDJkR6/mS1N1GU=","req":"{\"method\":\"vspTermidService\",\"param\":{\"bizUserId\":\"2C0C5886AC140A025579BB869FAB6D6B\",\"operationType\":\"set\",\"vspMerchantid\":\"set\",\"appid\":\"set\",\"vspTermid\":\"set\"},\"service\":\"MemberService\"}"}
+[INFO ] 2020-05-19 16:28:33,651 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"vspTermidService","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B","operationType":"set","vspMerchantid":"set","appid":"set","vspTermid":"set"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:28:33,651 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:28:33,652 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:28:33,652 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:28:33
+[INFO ] 2020-05-19 16:28:33,652 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is PP7RRGzIUW5qj6Flgnbj3nUIBhtxdU0M+8vgJ7J/vlxM+uSaBjyKf31n6lGUV+vAh7T51D2xSCezKoC6F96VOR/juWVLYoQ4opQ4zISOA9WzVhetndVHG4DzY/Z8EP5DFo7rM4/bhNvI2Im3YmH+dRw4QE/S9rDJkR6/mS1N1GU=
+[INFO ] 2020-05-19 16:28:33,652 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"vspTermidService","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B","operationType":"set","vspMerchantid":"set","appid":"set","vspTermid":"set"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:28:33,862 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:28:33,862 method:com.allinpay.autotest.member.MemberServiceTest.vspTermidService(MemberServiceTest.java:496)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.member.MemberServiceTest.vspTermidService(MemberServiceTest.java:478)
+	at com.allinpay.autotest.Main.testSuit(Main.java:74)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:28:33,863 method:com.allinpay.autotest.member.MemberServiceTest.vspTermidService(MemberServiceTest.java:501)
+================MemberAPI: vspTermidService end================[elapse: 215 ms]
+[INFO ] 2020-05-19 16:28:33,864 method:com.allinpay.autotest.member.MemberServiceTest.vspTermidService(MemberServiceTest.java:468)
+================MemberAPI: vspTermidService begin================
+[INFO ] 2020-05-19 16:28:33,867 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:28:33","sign":"LEwwaUMgkVGGQcDOHeT2VK9l5pSQc3jBft81IkoMd+LjDa7vGDjrZP5jn1LgAbUIE36pQ3SvR5uTGcRucVVB3lMdxZjMTk7KWjoSRUTAB400Ej/RH14ISkNNNLDPW6elsZGU6HTJpxyadk+TyTWRpFREyL/+hmNCYRR16l0ZsFc=","req":"{\"method\":\"vspTermidService\",\"param\":{\"bizUserId\":\"2C0C5886AC140A025579BB869FAB6D6B\",\"operationType\":\"query\",\"vspMerchantid\":\"set\",\"appid\":\"set\",\"vspTermid\":\"set\"},\"service\":\"MemberService\"}"}
+[INFO ] 2020-05-19 16:28:33,868 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"vspTermidService","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B","operationType":"query","vspMerchantid":"set","appid":"set","vspTermid":"set"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:28:33,868 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:28:33,868 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:28:33,869 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:28:33
+[INFO ] 2020-05-19 16:28:33,869 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is LEwwaUMgkVGGQcDOHeT2VK9l5pSQc3jBft81IkoMd+LjDa7vGDjrZP5jn1LgAbUIE36pQ3SvR5uTGcRucVVB3lMdxZjMTk7KWjoSRUTAB400Ej/RH14ISkNNNLDPW6elsZGU6HTJpxyadk+TyTWRpFREyL/+hmNCYRR16l0ZsFc=
+[INFO ] 2020-05-19 16:28:33,869 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"vspTermidService","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B","operationType":"query","vspMerchantid":"set","appid":"set","vspTermid":"set"},"service":"MemberService"}
+[INFO ] 2020-05-19 16:28:34,332 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:28:34,333 method:com.allinpay.autotest.member.MemberServiceTest.vspTermidService(MemberServiceTest.java:496)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.member.MemberServiceTest.vspTermidService(MemberServiceTest.java:478)
+	at com.allinpay.autotest.Main.testSuit(Main.java:75)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:28:34,333 method:com.allinpay.autotest.member.MemberServiceTest.vspTermidService(MemberServiceTest.java:501)
+================MemberAPI: vspTermidService end================[elapse: 469 ms]
+[INFO ] 2020-05-19 16:28:34,343 method:com.allinpay.autotest.order.OrderServiceTest.depositApply(OrderServiceTest.java:42)
+================OrderAPI: depositApply begin================
+[INFO ] 2020-05-19 16:28:34,351 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:28:34","sign":"L1X45ATkYS/a0bceauOe6BKWU8I1AeX8ZDkI1c3V52HyYksk+KvaVR7bD7+b0n0J6vNE4ezKv8tEA2bmisrUjBP/59aF9y8lYd9JgkEk1NRdsnSag7QI3h/izY0BezLW3E4CDRB/pcVeV8qaxtPsGMPL2yGKt/RhYZJTtE6SqrM=","req":"{\"method\":\"depositApply\",\"param\":{\"bizUserId\":\"2C0C5886AC140A025579BB869FAB6D6B\",\"bizOrderNo\":\"CZ1589876914343\",\"accountSetNo\":\"\",\"amount\":2,\"fee\":0,\"validateType\":1,\"frontUrl\":\"\",\"backUrl\":\"\",\"ordErexpireDatetime\":\"2020-05-20 07:28:34\",\"payMethod\":{\"GATEWAY\":{\"bankCode\":\"vbank\",\"amount\":2,\"payType\":1,\"bankCardNo\":\"20D4F16EB8F300B7FBD0C5A6E3F278C0AD369481588DC485640A22A03E50E6BA470C717D460B2242157E5EB5447BE677BC71FDE8580A34EE66425CE24276ACEA7A39E54AC5176C53C1FB975DA79B9CA8C3B4E22B1B15B97C3510705CB02140C6D693C72A06F33E285061DF58D018C41EECBD362A53A8FA4DF24E6F42C59833CC\"}},\"goodsName\":\"computer\",\"industryCode\":\"2413\",\"industryName\":\"电子产品\",\"source\":2,\"summary\":\"AUTO-TEST depositApply\",\"extendInfo\":\"AUTO-TEST this is extendInfo\"},\"service\":\"OrderService\"}"}
+[INFO ] 2020-05-19 16:28:34,351 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"depositApply","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B","bizOrderNo":"CZ1589876914343","accountSetNo":"","amount":2,"fee":0,"validateType":1,"frontUrl":"","backUrl":"","ordErexpireDatetime":"2020-05-20 07:28:34","payMethod":{"GATEWAY":{"bankCode":"vbank","amount":2,"payType":1,"bankCardNo":"20D4F16EB8F300B7FBD0C5A6E3F278C0AD369481588DC485640A22A03E50E6BA470C717D460B2242157E5EB5447BE677BC71FDE8580A34EE66425CE24276ACEA7A39E54AC5176C53C1FB975DA79B9CA8C3B4E22B1B15B97C3510705CB02140C6D693C72A06F33E285061DF58D018C41EECBD362A53A8FA4DF24E6F42C59833CC"}},"goodsName":"computer","industryCode":"2413","industryName":"电子产品","source":2,"summary":"AUTO-TEST depositApply","extendInfo":"AUTO-TEST this is extendInfo"},"service":"OrderService"}
+[INFO ] 2020-05-19 16:28:34,352 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:28:34,352 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:28:34,352 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:28:34
+[INFO ] 2020-05-19 16:28:34,352 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is L1X45ATkYS/a0bceauOe6BKWU8I1AeX8ZDkI1c3V52HyYksk+KvaVR7bD7+b0n0J6vNE4ezKv8tEA2bmisrUjBP/59aF9y8lYd9JgkEk1NRdsnSag7QI3h/izY0BezLW3E4CDRB/pcVeV8qaxtPsGMPL2yGKt/RhYZJTtE6SqrM=
+[INFO ] 2020-05-19 16:28:34,352 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"depositApply","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B","bizOrderNo":"CZ1589876914343","accountSetNo":"","amount":2,"fee":0,"validateType":1,"frontUrl":"","backUrl":"","ordErexpireDatetime":"2020-05-20 07:28:34","payMethod":{"GATEWAY":{"bankCode":"vbank","amount":2,"payType":1,"bankCardNo":"20D4F16EB8F300B7FBD0C5A6E3F278C0AD369481588DC485640A22A03E50E6BA470C717D460B2242157E5EB5447BE677BC71FDE8580A34EE66425CE24276ACEA7A39E54AC5176C53C1FB975DA79B9CA8C3B4E22B1B15B97C3510705CB02140C6D693C72A06F33E285061DF58D018C41EECBD362A53A8FA4DF24E6F42C59833CC"}},"goodsName":"computer","industryCode":"2413","industryName":"电子产品","source":2,"summary":"AUTO-TEST depositApply","extendInfo":"AUTO-TEST this is extendInfo"},"service":"OrderService"}
+[INFO ] 2020-05-19 16:28:34,645 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:28:34,646 method:com.allinpay.autotest.order.OrderServiceTest.depositApply(OrderServiceTest.java:354)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.order.OrderServiceTest.depositApply(OrderServiceTest.java:338)
+	at com.allinpay.autotest.Main.testSuit(Main.java:96)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:28:34,647 method:com.allinpay.autotest.order.OrderServiceTest.depositApply(OrderServiceTest.java:363)
+================OrderAPI: depositApply end================[elapse: 303 ms]
+[INFO ] 2020-05-19 16:28:34,647 method:com.allinpay.autotest.order.OrderServiceTest.depositApply(OrderServiceTest.java:42)
+================OrderAPI: depositApply begin================
+[INFO ] 2020-05-19 16:28:34,652 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:28:34","sign":"Ll5+WhWXchJpOgRF8rCyihmb0WylD0dyoK2CcuON4lqdq7JO4dSiCTB+aW1+94m/QyAukc55LaSwNPid8GYnMYs+6+xauqEQhfLdx9S5DhytoI/nOINhZk4OjlmZGl5OsOUU4KnSC8YuRPKJKHv4WZ3sL77XvyKTQ5UW4Ub0hiQ=","req":"{\"method\":\"depositApply\",\"param\":{\"bizUserId\":\"2C0C5886AC140A025579BB869FAB6D6B\",\"bizOrderNo\":\"CZ1589876914648\",\"accountSetNo\":\"\",\"amount\":2,\"fee\":0,\"validateType\":1,\"frontUrl\":\"\",\"backUrl\":\"\",\"ordErexpireDatetime\":\"2020-05-20 07:28:34\",\"payMethod\":{\"WECHATPAY_APP\":{\"amount\":2,\"subMchId\":\"\",\"Acct\":\"\",\"limitPay\":\"\",\"subAppId\":\"\"}},\"goodsName\":\"computer\",\"industryCode\":\"2413\",\"industryName\":\"电子产品\",\"source\":2,\"summary\":\"AUTO-TEST depositApply\",\"extendInfo\":\"AUTO-TEST this is extendInfo\"},\"service\":\"OrderService\"}"}
+[INFO ] 2020-05-19 16:28:34,653 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"depositApply","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B","bizOrderNo":"CZ1589876914648","accountSetNo":"","amount":2,"fee":0,"validateType":1,"frontUrl":"","backUrl":"","ordErexpireDatetime":"2020-05-20 07:28:34","payMethod":{"WECHATPAY_APP":{"amount":2,"subMchId":"","Acct":"","limitPay":"","subAppId":""}},"goodsName":"computer","industryCode":"2413","industryName":"电子产品","source":2,"summary":"AUTO-TEST depositApply","extendInfo":"AUTO-TEST this is extendInfo"},"service":"OrderService"}
+[INFO ] 2020-05-19 16:28:34,653 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:28:34,653 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:28:34,653 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:28:34
+[INFO ] 2020-05-19 16:28:34,653 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is Ll5+WhWXchJpOgRF8rCyihmb0WylD0dyoK2CcuON4lqdq7JO4dSiCTB+aW1+94m/QyAukc55LaSwNPid8GYnMYs+6+xauqEQhfLdx9S5DhytoI/nOINhZk4OjlmZGl5OsOUU4KnSC8YuRPKJKHv4WZ3sL77XvyKTQ5UW4Ub0hiQ=
+[INFO ] 2020-05-19 16:28:34,654 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"depositApply","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B","bizOrderNo":"CZ1589876914648","accountSetNo":"","amount":2,"fee":0,"validateType":1,"frontUrl":"","backUrl":"","ordErexpireDatetime":"2020-05-20 07:28:34","payMethod":{"WECHATPAY_APP":{"amount":2,"subMchId":"","Acct":"","limitPay":"","subAppId":""}},"goodsName":"computer","industryCode":"2413","industryName":"电子产品","source":2,"summary":"AUTO-TEST depositApply","extendInfo":"AUTO-TEST this is extendInfo"},"service":"OrderService"}
+[INFO ] 2020-05-19 16:28:35,054 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:28:35,054 method:com.allinpay.autotest.order.OrderServiceTest.depositApply(OrderServiceTest.java:354)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.order.OrderServiceTest.depositApply(OrderServiceTest.java:338)
+	at com.allinpay.autotest.Main.testSuit(Main.java:98)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:28:35,055 method:com.allinpay.autotest.order.OrderServiceTest.depositApply(OrderServiceTest.java:363)
+================OrderAPI: depositApply end================[elapse: 408 ms]
+[INFO ] 2020-05-19 16:28:35,055 method:com.allinpay.autotest.order.OrderServiceTest.depositApply(OrderServiceTest.java:42)
+================OrderAPI: depositApply begin================
+[INFO ] 2020-05-19 16:28:35,060 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:28:35","sign":"ZpJbceFEdvT1cvHlh7jKasP7pPfnSSKtk7qsNElgvJrZ95FDgRUUJraIK9O6MF0yTTCzaHhVdgarMPahq/O6bERE+XWN5c5LXZoMIl6YpzSrKleCfybC91vWB+H2gsPo8DBzNkQv+4pJpAhgs0jx3Jft/TtMbORLqnKKW99P18Q=","req":"{\"method\":\"depositApply\",\"param\":{\"bizUserId\":\"2C0C5886AC140A025579BB869FAB6D6B\",\"bizOrderNo\":\"CZ1589876915056\",\"accountSetNo\":\"\",\"amount\":2,\"fee\":0,\"validateType\":1,\"frontUrl\":\"\",\"backUrl\":\"\",\"ordErexpireDatetime\":\"2020-05-20 07:28:35\",\"payMethod\":{\"WECHAT_PUBLIC\":{\"amount\":2,\"acct\":\"\",\"payType\":\"\"}},\"goodsName\":\"computer\",\"industryCode\":\"2413\",\"industryName\":\"电子产品\",\"source\":2,\"summary\":\"AUTO-TEST depositApply\",\"extendInfo\":\"AUTO-TEST this is extendInfo\"},\"service\":\"OrderService\"}"}
+[INFO ] 2020-05-19 16:28:35,060 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"depositApply","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B","bizOrderNo":"CZ1589876915056","accountSetNo":"","amount":2,"fee":0,"validateType":1,"frontUrl":"","backUrl":"","ordErexpireDatetime":"2020-05-20 07:28:35","payMethod":{"WECHAT_PUBLIC":{"amount":2,"acct":"","payType":""}},"goodsName":"computer","industryCode":"2413","industryName":"电子产品","source":2,"summary":"AUTO-TEST depositApply","extendInfo":"AUTO-TEST this is extendInfo"},"service":"OrderService"}
+[INFO ] 2020-05-19 16:28:35,061 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:28:35,061 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:28:35,061 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:28:35
+[INFO ] 2020-05-19 16:28:35,061 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is ZpJbceFEdvT1cvHlh7jKasP7pPfnSSKtk7qsNElgvJrZ95FDgRUUJraIK9O6MF0yTTCzaHhVdgarMPahq/O6bERE+XWN5c5LXZoMIl6YpzSrKleCfybC91vWB+H2gsPo8DBzNkQv+4pJpAhgs0jx3Jft/TtMbORLqnKKW99P18Q=
+[INFO ] 2020-05-19 16:28:35,061 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"depositApply","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B","bizOrderNo":"CZ1589876915056","accountSetNo":"","amount":2,"fee":0,"validateType":1,"frontUrl":"","backUrl":"","ordErexpireDatetime":"2020-05-20 07:28:35","payMethod":{"WECHAT_PUBLIC":{"amount":2,"acct":"","payType":""}},"goodsName":"computer","industryCode":"2413","industryName":"电子产品","source":2,"summary":"AUTO-TEST depositApply","extendInfo":"AUTO-TEST this is extendInfo"},"service":"OrderService"}
+[INFO ] 2020-05-19 16:28:35,274 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:28:35,275 method:com.allinpay.autotest.order.OrderServiceTest.depositApply(OrderServiceTest.java:354)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.order.OrderServiceTest.depositApply(OrderServiceTest.java:338)
+	at com.allinpay.autotest.Main.testSuit(Main.java:101)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:28:35,276 method:com.allinpay.autotest.order.OrderServiceTest.depositApply(OrderServiceTest.java:363)
+================OrderAPI: depositApply end================[elapse: 221 ms]
+[INFO ] 2020-05-19 16:28:35,276 method:com.allinpay.autotest.order.OrderServiceTest.withdrawApply(OrderServiceTest.java:387)
+================OrderAPI: withdrawApply begin================
+[INFO ] 2020-05-19 16:28:35,281 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:28:35","sign":"N/iIod0Kcz2E6keqeTXj7O7DOTjyiPpLkLoE6+RE/d9QAxSjVibOtW4Ke5+LdsDHzQ7kvbgw1Fb+EsMkkOCK2GrIB7SYrn71Ipico/0D3+Fa1HL2zfAI9Lzrugd9m295PkrxZr7RNEZ0N3IEVxllTq4UTK60KDDC+G6uDB0a3TE=","req":"{\"method\":\"withdrawApply\",\"param\":{\"bizUserId\":\"2C0C5886AC140A025579BB869FAB6D6B\",\"bizOrderNo\":\"TX1589876915276\",\"accountSetNo\":\"\",\"amount\":1,\"fee\":0,\"validateType\":1,\"backUrl\":\"\",\"ordErexpireDatetime\":\"2020-05-20 07:28:35\",\"payMethod\":{\"WITHDRAW_TLT\":{\"province\":\"ä¸\\u008Aæµ·\",\"city\":\"æµ¦ä¸\\u009Cæ\\u0096°å\\u008Cº\",\"unionBank\":\"03080000\",\"payTypeName\":\"withdraw_tlt\"}},\"bankCardNo\":\"077C153F7E2B650A0013D57332E8C3ECA414452C50BDAE254171012EBD3E150584DC0AAC2B7EBE59019B907BBA8BED9F8C1FC18E76C5FD2C9D707E8A6D20B4A0A34EABCBFA1F267B2800037042AEA22720012425DC5054607DF1FEB9E18EB692DA08935B01601514AAA8AE473899FBC1F6B6FD23841FA70D52E0A91AEE550CAF\",\"bankCardPro\":0,\"withdrawType\":\"T0\",\"industryCode\":\"2413\",\"industryName\":\"电子产品\",\"source\":2,\"summary\":\"AUTO-TEST withdrawApply\",\"extendInfo\":\"AUTO-TEST this is extendInfo\"},\"service\":\"OrderService\"}"}
+[INFO ] 2020-05-19 16:28:35,283 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"withdrawApply","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B","bizOrderNo":"TX1589876915276","accountSetNo":"","amount":1,"fee":0,"validateType":1,"backUrl":"","ordErexpireDatetime":"2020-05-20 07:28:35","payMethod":{"WITHDRAW_TLT":{"province":"ä¸\u008Aæµ·","city":"æµ¦ä¸\u009Cæ\u0096°å\u008Cº","unionBank":"03080000","payTypeName":"withdraw_tlt"}},"bankCardNo":"077C153F7E2B650A0013D57332E8C3ECA414452C50BDAE254171012EBD3E150584DC0AAC2B7EBE59019B907BBA8BED9F8C1FC18E76C5FD2C9D707E8A6D20B4A0A34EABCBFA1F267B2800037042AEA22720012425DC5054607DF1FEB9E18EB692DA08935B01601514AAA8AE473899FBC1F6B6FD23841FA70D52E0A91AEE550CAF","bankCardPro":0,"withdrawType":"T0","industryCode":"2413","industryName":"电子产品","source":2,"summary":"AUTO-TEST withdrawApply","extendInfo":"AUTO-TEST this is extendInfo"},"service":"OrderService"}
+[INFO ] 2020-05-19 16:28:35,284 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:28:35,284 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:28:35,285 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:28:35
+[INFO ] 2020-05-19 16:28:35,285 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is N/iIod0Kcz2E6keqeTXj7O7DOTjyiPpLkLoE6+RE/d9QAxSjVibOtW4Ke5+LdsDHzQ7kvbgw1Fb+EsMkkOCK2GrIB7SYrn71Ipico/0D3+Fa1HL2zfAI9Lzrugd9m295PkrxZr7RNEZ0N3IEVxllTq4UTK60KDDC+G6uDB0a3TE=
+[INFO ] 2020-05-19 16:28:35,285 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"withdrawApply","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B","bizOrderNo":"TX1589876915276","accountSetNo":"","amount":1,"fee":0,"validateType":1,"backUrl":"","ordErexpireDatetime":"2020-05-20 07:28:35","payMethod":{"WITHDRAW_TLT":{"province":"ä¸\u008Aæµ·","city":"æµ¦ä¸\u009Cæ\u0096°å\u008Cº","unionBank":"03080000","payTypeName":"withdraw_tlt"}},"bankCardNo":"077C153F7E2B650A0013D57332E8C3ECA414452C50BDAE254171012EBD3E150584DC0AAC2B7EBE59019B907BBA8BED9F8C1FC18E76C5FD2C9D707E8A6D20B4A0A34EABCBFA1F267B2800037042AEA22720012425DC5054607DF1FEB9E18EB692DA08935B01601514AAA8AE473899FBC1F6B6FD23841FA70D52E0A91AEE550CAF","bankCardPro":0,"withdrawType":"T0","industryCode":"2413","industryName":"电子产品","source":2,"summary":"AUTO-TEST withdrawApply","extendInfo":"AUTO-TEST this is extendInfo"},"service":"OrderService"}
+[INFO ] 2020-05-19 16:28:35,663 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:28:35,664 method:com.allinpay.autotest.order.OrderServiceTest.withdrawApply(OrderServiceTest.java:490)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.order.OrderServiceTest.withdrawApply(OrderServiceTest.java:470)
+	at com.allinpay.autotest.Main.testSuit(Main.java:112)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:28:35,665 method:com.allinpay.autotest.order.OrderServiceTest.withdrawApply(OrderServiceTest.java:500)
+================OrderAPI: withdrawApply end================[elapse: 388 ms]
+[INFO ] 2020-05-19 16:28:35,665 method:com.allinpay.autotest.order.OrderServiceTest.withdrawApply(OrderServiceTest.java:387)
+================OrderAPI: withdrawApply begin================
+[INFO ] 2020-05-19 16:28:35,669 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:28:35","sign":"bEnI7l0ki/3wi7JMftEhSdpJcF4gDf0eiuwnFwrwxvOs4mHst9BTgL1hqrqrnbfcPnsq4b4fZREdlAt68S651Mpyo6lBcucu1WzRbyM+9bsN2eYz9Vph4M4PMWyi1DlNJ+hVwKC1JPfovDSkNtvW1zAGvmhkTQmWKEQwGcBKkVY=","req":"{\"method\":\"withdrawApply\",\"param\":{\"bizUserId\":\"2C0C5886AC140A025579BB869FAB6D6B\",\"bizOrderNo\":\"TX1589876915665\",\"accountSetNo\":\"\",\"amount\":1,\"fee\":0,\"validateType\":1,\"backUrl\":\"\",\"ordErexpireDatetime\":\"2020-05-20 07:28:35\",\"payMethod\":{\"VIRTUAL_OUT\":{\"extChannelNo\":\"AUTO-TEST\",\"amount\":1,\"paysummary\":\"AUTO-TEST\",\"extAccount\":\"AUTO-TEST\"}},\"bankCardNo\":\"8A1A6C204EE8F57F2841F9EB66912D6863EED6CB7580E1A3D5CDFD2B5B4EC1CF075266A602284F54ECBE1BDCFE3139A778C43A4181FE6736E7929D5652D53E6B9C47D109F0BB6D9B8D351880EA22F085D9DC6BC442BBC0B378F2227028EB3971995DD4CFDADCE9D4A56C6C44DB1973CD7509310666EC3F06835471110A616B22\",\"bankCardPro\":0,\"withdrawType\":\"T0\",\"industryCode\":\"2413\",\"industryName\":\"电子产品\",\"source\":2,\"summary\":\"AUTO-TEST withdrawApply\",\"extendInfo\":\"AUTO-TEST this is extendInfo\"},\"service\":\"OrderService\"}"}
+[INFO ] 2020-05-19 16:28:35,669 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"withdrawApply","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B","bizOrderNo":"TX1589876915665","accountSetNo":"","amount":1,"fee":0,"validateType":1,"backUrl":"","ordErexpireDatetime":"2020-05-20 07:28:35","payMethod":{"VIRTUAL_OUT":{"extChannelNo":"AUTO-TEST","amount":1,"paysummary":"AUTO-TEST","extAccount":"AUTO-TEST"}},"bankCardNo":"8A1A6C204EE8F57F2841F9EB66912D6863EED6CB7580E1A3D5CDFD2B5B4EC1CF075266A602284F54ECBE1BDCFE3139A778C43A4181FE6736E7929D5652D53E6B9C47D109F0BB6D9B8D351880EA22F085D9DC6BC442BBC0B378F2227028EB3971995DD4CFDADCE9D4A56C6C44DB1973CD7509310666EC3F06835471110A616B22","bankCardPro":0,"withdrawType":"T0","industryCode":"2413","industryName":"电子产品","source":2,"summary":"AUTO-TEST withdrawApply","extendInfo":"AUTO-TEST this is extendInfo"},"service":"OrderService"}
+[INFO ] 2020-05-19 16:28:35,670 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:28:35,670 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:28:35,670 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:28:35
+[INFO ] 2020-05-19 16:28:35,670 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is bEnI7l0ki/3wi7JMftEhSdpJcF4gDf0eiuwnFwrwxvOs4mHst9BTgL1hqrqrnbfcPnsq4b4fZREdlAt68S651Mpyo6lBcucu1WzRbyM+9bsN2eYz9Vph4M4PMWyi1DlNJ+hVwKC1JPfovDSkNtvW1zAGvmhkTQmWKEQwGcBKkVY=
+[INFO ] 2020-05-19 16:28:35,671 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"withdrawApply","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B","bizOrderNo":"TX1589876915665","accountSetNo":"","amount":1,"fee":0,"validateType":1,"backUrl":"","ordErexpireDatetime":"2020-05-20 07:28:35","payMethod":{"VIRTUAL_OUT":{"extChannelNo":"AUTO-TEST","amount":1,"paysummary":"AUTO-TEST","extAccount":"AUTO-TEST"}},"bankCardNo":"8A1A6C204EE8F57F2841F9EB66912D6863EED6CB7580E1A3D5CDFD2B5B4EC1CF075266A602284F54ECBE1BDCFE3139A778C43A4181FE6736E7929D5652D53E6B9C47D109F0BB6D9B8D351880EA22F085D9DC6BC442BBC0B378F2227028EB3971995DD4CFDADCE9D4A56C6C44DB1973CD7509310666EC3F06835471110A616B22","bankCardPro":0,"withdrawType":"T0","industryCode":"2413","industryName":"电子产品","source":2,"summary":"AUTO-TEST withdrawApply","extendInfo":"AUTO-TEST this is extendInfo"},"service":"OrderService"}
+[INFO ] 2020-05-19 16:28:36,175 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:28:36,175 method:com.allinpay.autotest.order.OrderServiceTest.withdrawApply(OrderServiceTest.java:490)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.order.OrderServiceTest.withdrawApply(OrderServiceTest.java:470)
+	at com.allinpay.autotest.Main.testSuit(Main.java:114)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:28:36,176 method:com.allinpay.autotest.order.OrderServiceTest.withdrawApply(OrderServiceTest.java:500)
+================OrderAPI: withdrawApply end================[elapse: 511 ms]
+[INFO ] 2020-05-19 16:28:36,176 method:com.allinpay.autotest.order.OrderServiceTest.consumeApply(OrderServiceTest.java:509)
+================OrderAPI: consumeApply begin================
+[INFO ] 2020-05-19 16:28:36,180 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:28:36","sign":"eeBu6ds6OEKhWyrUaql/7pQ7E9CAhs2Y8+vXf6KBtHJWg42QGGEXe/z3kZ+7qUybtfX+9GyXfXN9aACzjTNwUdK/w0ezxlpN91lw0rW/Uq73Wknpq+gAfB9UAIgfpLkZ40PvTJfxdgi3KdNRZXT8mVWiYz/x4D32OoR4BZpW0FE=","req":"{\"method\":\"consumeApply\",\"param\":{\"payerId\":\"\",\"recieverId\":\"\",\"bizOrderNo\":\"XF1589876916177\",\"amount\":2,\"fee\":0,\"validateType\":1,\"frontUrl\":\"\",\"backUrl\":\"\",\"ordErexpireDatetime\":\"2020-05-20 07:28:36\",\"payMethod\":{\"POSPAY\":{\"amount\":2}},\"goodsName\":\"computer\",\"industryCode\":\"2413\",\"industryName\":\"电子产品\",\"source\":2,\"summary\":\"AUTO-TEST consumeApply\",\"extendInfo\":\"AUTO-TEST this is extendInfo\"},\"service\":\"OrderService\"}"}
+[INFO ] 2020-05-19 16:28:36,181 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"consumeApply","param":{"payerId":"","recieverId":"","bizOrderNo":"XF1589876916177","amount":2,"fee":0,"validateType":1,"frontUrl":"","backUrl":"","ordErexpireDatetime":"2020-05-20 07:28:36","payMethod":{"POSPAY":{"amount":2}},"goodsName":"computer","industryCode":"2413","industryName":"电子产品","source":2,"summary":"AUTO-TEST consumeApply","extendInfo":"AUTO-TEST this is extendInfo"},"service":"OrderService"}
+[INFO ] 2020-05-19 16:28:36,181 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:28:36,181 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:28:36,181 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:28:36
+[INFO ] 2020-05-19 16:28:36,181 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is eeBu6ds6OEKhWyrUaql/7pQ7E9CAhs2Y8+vXf6KBtHJWg42QGGEXe/z3kZ+7qUybtfX+9GyXfXN9aACzjTNwUdK/w0ezxlpN91lw0rW/Uq73Wknpq+gAfB9UAIgfpLkZ40PvTJfxdgi3KdNRZXT8mVWiYz/x4D32OoR4BZpW0FE=
+[INFO ] 2020-05-19 16:28:36,181 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"consumeApply","param":{"payerId":"","recieverId":"","bizOrderNo":"XF1589876916177","amount":2,"fee":0,"validateType":1,"frontUrl":"","backUrl":"","ordErexpireDatetime":"2020-05-20 07:28:36","payMethod":{"POSPAY":{"amount":2}},"goodsName":"computer","industryCode":"2413","industryName":"电子产品","source":2,"summary":"AUTO-TEST consumeApply","extendInfo":"AUTO-TEST this is extendInfo"},"service":"OrderService"}
+[INFO ] 2020-05-19 16:28:36,484 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:28:36,485 method:com.allinpay.autotest.order.OrderServiceTest.consumeApply(OrderServiceTest.java:869)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.order.OrderServiceTest.consumeApply(OrderServiceTest.java:836)
+	at com.allinpay.autotest.Main.testSuit(Main.java:120)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:28:36,485 method:com.allinpay.autotest.order.OrderServiceTest.consumeApply(OrderServiceTest.java:893)
+================OrderAPI: consumeApply end================[elapse: 309 ms]
+[INFO ] 2020-05-19 16:28:36,486 method:com.allinpay.autotest.order.OrderServiceTest.backPay(OrderServiceTest.java:1827)
+================OrderAPI: backPay begin================
+[INFO ] 2020-05-19 16:28:36,489 method:com.allinpay.yunst.sdk.YunClient.assembleReq(YunClient.java:180)
+request:{"sysid":"1901221739109177974","v":"2.0","timestamp":"2020-05-19 16:28:36","sign":"X/F9XrA0DdJbkbkAcHRdXH6LItpEv04ciE68NwEHoxRK5EvbHPPVWbMH7jwreqQC+ejgYsC/F9EFqaIgllyjOs+uM3G/KtLVQQ8pW8OORO9eUT1VyxL7jrY3xQ7VcbhOsmzP9NTLX81WKXOk+Aid6yF+9Ku3weo0cLDKEl1+7HQ=","req":"{\"method\":\"pay\",\"param\":{\"bizUserId\":\"2C0C5886AC140A025579BB869FAB6D6B\",\"bizOrderNo\":\"XF1589876916177\",\"tradeNo\":\"\",\"verificationCode\":\"\",\"consumerIp\":\"192.168.14.61\"},\"service\":\"OrderService\"}"}
+[INFO ] 2020-05-19 16:28:36,489 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:96)
+request is :{"method":"pay","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B","bizOrderNo":"XF1589876916177","tradeNo":"","verificationCode":"","consumerIp":"192.168.14.61"},"service":"OrderService"}
+[INFO ] 2020-05-19 16:28:36,489 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sysid; value is 1901221739109177974
+[INFO ] 2020-05-19 16:28:36,489 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :v; value is 2.0
+[INFO ] 2020-05-19 16:28:36,490 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :timestamp; value is 2020-05-19 16:28:36
+[INFO ] 2020-05-19 16:28:36,490 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :sign; value is X/F9XrA0DdJbkbkAcHRdXH6LItpEv04ciE68NwEHoxRK5EvbHPPVWbMH7jwreqQC+ejgYsC/F9EFqaIgllyjOs+uM3G/KtLVQQ8pW8OORO9eUT1VyxL7jrY3xQ7VcbhOsmzP9NTLX81WKXOk+Aid6yF+9Ku3weo0cLDKEl1+7HQ=
+[INFO ] 2020-05-19 16:28:36,490 method:com.allinpay.yunst.sdk.YunClient.encodeOnce(YunClient.java:100)
+key is :req; value is {"method":"pay","param":{"bizUserId":"2C0C5886AC140A025579BB869FAB6D6B","bizOrderNo":"XF1589876916177","tradeNo":"","verificationCode":"","consumerIp":"192.168.14.61"},"service":"OrderService"}
+[INFO ] 2020-05-19 16:28:36,997 method:com.allinpay.yunst.sdk.YunClient.request(YunClient.java:78)
+response:{"errorCode":"20000","message":"1901221739109177974应用不存在。","status":"error"}
+[ERROR] 2020-05-19 16:28:36,997 method:com.allinpay.autotest.order.OrderServiceTest.backPay(OrderServiceTest.java:1860)
+EXCEPTION
+java.lang.IllegalArgumentException: return error,signedValue is null
+	at com.allinpay.yunst.sdk.util.YunUtil.assertNotNull(YunUtil.java:14)
+	at com.allinpay.yunst.sdk.YunClient.verify(YunClient.java:196)
+	at com.allinpay.yunst.sdk.YunClient.request(YunClient.java:82)
+	at com.allinpay.autotest.order.OrderServiceTest.backPay(OrderServiceTest.java:1845)
+	at com.allinpay.autotest.Main.testSuit(Main.java:122)
+	at com.allinpay.autotest.Main.main(Main.java:157)
+[INFO ] 2020-05-19 16:28:36,999 method:com.allinpay.autotest.order.OrderServiceTest.backPay(OrderServiceTest.java:1870)
+================OrderAPI: backPay end================[elapse: 512 ms]
